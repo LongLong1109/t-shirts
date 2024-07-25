@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should renders correctly 1`] = `
+<div>
+  <header
+    class="fixed top-0 left-0 z-50 flex items-center justify-between px-32 bg-white-100 h-20 w-full"
+  >
+    <div
+      class="flex items-center gap-2"
+    >
+      <svg
+        fill="none"
+        height="34"
+        viewBox="0 0 36 34"
+        width="36"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M35.0463 0H0.214311C0.0960349 0 0 0.0964564 0 0.215448V33.7193C0 33.8383 0.0960349 33.9347 0.214311 33.9347H35.0463C35.1646 33.9347 35.26 33.8383 35.26 33.7193V0.215448C35.26 0.0964564 35.1646 0 35.0463 0Z"
+          fill="#0EC5D7"
+        />
+        <path
+          d="M9.31885 7.46802V26.4666"
+          stroke="white"
+          stroke-width="3.08178"
+        />
+        <path
+          d="M15.0122 7.46802V16.9314"
+          stroke="white"
+          stroke-width="3.07593"
+        />
+        <path
+          d="M19.3486 7.46875V10.6831H24.781L28.7218 18.826H32.27L26.6346 7.46875H19.3486Z"
+          fill="white"
+        />
+        <path
+          d="M20.9629 14.1665V26.8438"
+          stroke="white"
+          stroke-width="3.56014"
+        />
+      </svg>
+      <p
+        class="text-undefined font-bold text-undefined"
+      >
+        mangcoding Store
+      </p>
+    </div>
+    <div
+      class="flex items-center"
+    >
+      <nav
+        class="flex"
+      >
+        <ul
+          class="flex gap-10"
+        >
+          <li>
+            <a
+              class="active font-bold flex flex-col items-center text-sm "
+              href="/"
+              style="color: blue;"
+            >
+              <p>
+                Home
+              </p>
+              <svg
+                fill="none"
+                height="4"
+                viewBox="0 0 4 4"
+                width="4"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="2"
+                  cy="2"
+                  fill="#5463FF"
+                  r="2"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class=" text-sm "
+              href="/shop"
+              style="color: black;"
+            >
+              <p>
+                Shop
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              class=" text-sm "
+              href="/about"
+              style="color: black;"
+            >
+              <p>
+                About
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              class=" text-sm "
+              href="/contact"
+              style="color: black;"
+            >
+              <p>
+                Contact
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="px-6 flex gap-6 items-center"
+      >
+        <svg
+          fill="none"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.12403 9.03885C6.2568 7.97675 7.42732 7.39149 8.35666 7.92254L10.7597 9.29568C11.5282 9.73487 12.4718 9.73487 13.2403 9.29568L15.6433 7.92254C16.5727 7.39149 17.7432 7.97675 17.876 9.03885L19.2229 19.8139C19.3348 20.7092 18.6367 21.5 17.7344 21.5H6.26556C5.36332 21.5 4.66524 20.7092 4.77715 19.8139L6.12403 9.03885Z"
+            stroke="#0D1222"
+          />
+          <path
+            d="M15 6V4.01042C15 2.89583 14.0076 2 12.7985 2H11.2015C9.98099 2 9 2.90625 9 4.01042V6"
+            stroke="#0D1222"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="1.2"
+          />
+          <circle
+            cx="9"
+            cy="12"
+            r="0.8"
+            stroke="#0D1222"
+            stroke-width="0.4"
+          />
+          <circle
+            cx="15"
+            cy="12"
+            r="0.8"
+            stroke="#0D1222"
+            stroke-width="0.4"
+          />
+        </svg>
+        <svg
+          fill="none"
+          height="20"
+          viewBox="0 0 22 20"
+          width="22"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.7549 1C13.6629 1 11.8539 2.27953 11.005 4.11493C10.1561 2.27953 8.35724 1 6.25517 1C3.35472 1 1 3.4437 1 6.45375C1 10.7643 7.04345 16.2915 9.73167 18.5359C10.4795 19.1547 11.5306 19.1547 12.2683 18.5359C14.9666 16.281 21 10.7538 21 6.45375C21.0101 3.4437 18.6554 1 15.7549 1Z"
+            stroke="#0D1222"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="1.2"
+          />
+        </svg>
+        <svg
+          fill="none"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="12"
+            cy="7"
+            r="2.5"
+            stroke="#0D1222"
+          />
+          <path
+            d="M5.5 19C5.5 15.4101 8.41015 12.5 12 12.5C15.5899 12.5 18.5 15.4101 18.5 19V19.5H5.5V19Z"
+            stroke="#0D1222"
+          />
+        </svg>
+      </div>
+      <div>
+        <div
+          class="relative flex items-center"
+        >
+          <input
+            class="outline-none px-6 py-3  outline border border-dark-90 rounded-xl"
+            placeholder="Search"
+            type="search"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;

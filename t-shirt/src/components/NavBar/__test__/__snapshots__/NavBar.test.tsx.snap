@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Component should matches snapshot 1`] = `
+<div>
+  <nav
+    class="flex"
+  >
+    <ul
+      class="flex gap-10"
+    >
+      <li>
+        <a
+          class="active font-bold flex flex-col items-center text-sm "
+          href="/"
+          style="color: blue;"
+        >
+          <p
+            class="pb-2"
+          >
+            Home
+          </p>
+          <svg
+            fill="none"
+            height="4"
+            viewBox="0 0 4 4"
+            width="4"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="2"
+              cy="2"
+              fill="#5463FF"
+              r="2"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          class=" text-sm "
+          href="/shop"
+          style="color: black;"
+        >
+          <p
+            class="pb-2"
+          >
+            Shop
+          </p>
+        </a>
+      </li>
+      <li>
+        <a
+          class=" text-sm "
+          href="/about"
+          style="color: black;"
+        >
+          <p
+            class="pb-2"
+          >
+            About
+          </p>
+        </a>
+      </li>
+      <li>
+        <a
+          class=" text-sm "
+          href="/contact"
+          style="color: black;"
+        >
+          <p
+            class="pb-2"
+          >
+            Contact
+          </p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

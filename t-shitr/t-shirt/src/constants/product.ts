@@ -15,19 +15,19 @@ export const INITIAL_PRODUCT: ProductProps = {
 
 export const PRODUCT_IMAGES = [
   {
-    src: 'https://s3-alpha-sig.figma.com/img/4cac/1c46/34e9b98b924cfd8fd8d82561815b9ba6?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UjpZI3n-ctvOxZA-vRbJ5oIJCPbxovMSFAHD1KZ3Iy~87Ix7W3YkE4WWR9HOCt0d6TW5~P69RrX0uk~blW-~b3N2J2N2ZYDpA3bJcHQtoRr-ewHhz7fM57kXZsMBLZFl-Vl40Kp6y0GQuzOBo2YIKeFY0Zu9OZgtqmg3KX7wsw7m0nuuCoi1tHGH8XFvhSP-aefHS5QqhDHe0~ALls-B0EgkaKjgu2jGYVhAfaE2U1e~ie67HY3NRUl4quNuN0eoJ6cNwhK0KRQIRwMxt-uflH6q1KZp9rhLWu2fC2prdT8zc53WvSc4QdaUHML2xld4cLv-tPg8-Uq5EA6N4uhW5w__',
+    src: 'https://s3-alpha-sig.figma.com/img/4cac/1c46/34e9b98b924cfd8fd8d82561815b9ba6?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lkcJLxlAnIGv8DDEHGIXmYfCye6JIvu70hJvyQya8ZFYxk7Jrloo5AauPPmlFa9hxxYtX4wP4dqCGprfI-YUWVwjlqhLz3~yXq4jQgAl~NgI6MscnBDqzho-0FhQJyO4EnUg~AjCMH5wKS9b8wSEW9JdOTOq6jszq3jlxGLZZ17i29DGeWJpX3Q5aAHofs-PkuJwmswbfOs6RgvxXzVBs3JsqkSdv9AwJ9XdRg1XCl4pTu5WPyKUyBkNKlYC~U3hMVisD~t0~xRnaXdArd1RwdqnB4k7IU3Xo4pUiPK3QPM5EOMKbBo92h-W4MRKPoogurhbDbr4A2-WGIiEsekx1g__',
     alt: 'White T-Shirt',
     blurData:
       'Imh0dHBzOi8vYml6d2ViLmRrdGNkbi5uZXQvdGh1bWIvMTAyNHgxMDI0LzEwMC80MzgvOTI2L3Byb2R1Y3RzLzc4OTQ3ODI1NTQwMjI0MDYwMTU2NjM3NjY3NDc3OS5wbmc/dj0xNjMzNTc3ODg3MzcwIg==',
   },
   {
-    src: 'https://s3-alpha-sig.figma.com/img/acbb/0249/a1432b26fadbdae44b7595dff2bf552b?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QeHasBekOFrYbzy7etchog-1Uw328D5EeP4aDU6JBSuoGGlSWUcVvm4dn4UyhHYExQSlv2QN7peCj9gja989rlNMv9xxDAVwG58hwejs6x1~z1WpY9jNRwLjKiIzUuDbOenEWxUy3K7P~4LnoKtW45Shs1J1fz~nahdgcnuO9xUDr9aOOsKypE6dtQfssZpD7RGeD9s~Pq7p5XDb~mbqTNBsQ8HrDHkNYYQ-FNcMted7prvxB-FFr-OyAG-DfLu588624BG9z8SJfxJbyBNpp6pzmumI9BZ-d24PFJelnLiXqiWcHF2pRz5flfyoKvGcmFBaTpqIbPWYjzjMnElnAA__',
+    src: 'https://s3-alpha-sig.figma.com/img/acbb/0249/a1432b26fadbdae44b7595dff2bf552b?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qus4Mg6ioa~aHB5WnEHfZG-~UllJaCDU2nRodKOhD85526CiJVOPB9gRBvaLOu6JqvkEdYm1OVs0O~hYNjqyPoVP1va~U7HXLq1M~gb2dhQF4swnBUshIHWxSTskbQ486t9hAuserk0b4gR286~c1VIR98tgoPJP~lmlgMkgnJyrvGy4HGs-POqL36OXxTZrzOcZFBYVLfapbwgMUcP1~xATqT5WbyKAGslapkcob1JMv6gy2KT38ulcwL-LIqTIvVEFVfHdMtLIymE8nGLVrpTcDpi7SDTkplFjjmvHtOlPqJ3fw5EYIcXzUG30Cs-H8wGUaZSEK~cjAxzvubMp0A__',
     alt: 'White T-Shirt',
     blurData:
       'Imh0dHBzOi8vYml6d2ViLmRrdGNkbi5uZXQvdGh1bWIvMTAyNHgxMDI0LzEwMC80MzgvOTI2L3Byb2R1Y3RzLzc4OTQ3ODI1NTQwMjI0MDYwMTU2NjM3NjY3NDc3OS5wbmc/dj0xNjMzNTc3ODg3MzcwIg==',
   },
   {
-    src: 'https://s3-alpha-sig.figma.com/img/f1c8/187f/5de17f4586499f62c3a89ae9fb05327c?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KOpK14ahjzbl6bYej01DXh6KjZsm1Tfpx58RxH053fI9jORVv6IPKvLkTzxyQOnO8V9sbshNRQ0L4-O8ccP0iXu48Nl7X47NKNQQ3t~I60dzDJ-DMAjt7RGl9KdkjnqpPfz9~Wonjhifwzd5U7v400VVtvXrG3lRxYahMDspFlTSNtsQ-SH9mg6cgY7kkbfO5UF9g8LM9gcNK9NkDJdbd25U1pkf82wzQ3PildSceWVpEw6bkmxCfL0DRBADblhVvJ-g77KYCS7orb3momx88hltfnGivn0BHddgEcyJ~9BqJ6tVTP~LsYJAhiS0YhnFvnl4Jq1gHZ~3oaP0k-txdw__',
+    src: 'https://s3-alpha-sig.figma.com/img/f1c8/187f/5de17f4586499f62c3a89ae9fb05327c?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QPIo5pIzj5HAIzSs-Xa4TWmsARCnc9YwqaTQ1yygfc6T~ypwEXHYLzBHYJHnM7a6jphp2mdLZoJtlHJG0yTGBk4q-Qe5OSHpcaGwZWyU-C2g5uFskUWVFoh4Z3fL9HJQc09Fra5XeybNEbefJR45GqyQ7crMjymbftuYp9QvB8R7IRB-VrEA4qYXCJxCZTlb4caFwFs6IB84xd5z5XiA29bP1QsXW9r3R1trwDLJLmb6iDZgT6sLxSNxJiXBzndIIvHSdq7NJOvMNq3qaplK~FqNkWzM3yhr8Xy2sK68D4EExZc1aT0Lz7lBUCw6zX1ZZWWrAnOB014fIa09TE4Umw__',
     alt: 'White T-Shirt',
     blurData:
       'Imh0dHBzOi8vYml6d2ViLmRrdGNkbi5uZXQvdGh1bWIvMTAyNHgxMDI0LzEwMC80MzgvOTI2L3Byb2R1Y3RzLzc4OTQ3ODI1NTQwMjI0MDYwMTU2NjM3NjY3NDc3OS5wbmc/dj0xNjMzNTc3ODg3MzcwIg==',

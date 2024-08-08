@@ -21,7 +21,7 @@ const RadioButton = ({ id, name, value, isChecked, onChange, inputStyle }: Radio
         value={value}
         checked={isChecked}
         onChange={handleChange}
-        className={`appearance-none w-6 h-6 rounded-full ${inputStyle} bg-dark-100 border border-gray-300`}
+        className={`appearance-none w-6 h-6 rounded-full ${inputStyle} border border-gray-300`}
       />
       <span
         className={`absolute w-3 h-3 rounded-full ${isChecked ? 'bg-blue-500' : 'bg-transparent'} ml-[6px]`}

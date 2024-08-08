@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 // components
-import { Carousel } from '@/components'
+import Carousel from '@/components/Carousel'
 
 // mocks
 import { modelList } from '@/mocks'

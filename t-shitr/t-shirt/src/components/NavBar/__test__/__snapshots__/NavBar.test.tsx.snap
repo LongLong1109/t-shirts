@@ -3,20 +3,18 @@
 exports[`NavBar Component should matches snapshot 1`] = `
 <div>
   <nav
-    class="flex"
+    class="flex sm:bg-white-100 sm:w-full"
   >
     <ul
-      class="flex gap-10"
+      class="flex md:flex-row md:p-0 gap-10 sm:flex-col sm:p-10"
     >
       <li>
         <a
-          class="active font-bold flex flex-col items-center text-sm "
-          href="/"
+          class="active font-bold flex flex-col items-center text-sm"
+          href="/home"
           style="color: blue;"
         >
-          <p
-            class="pb-2"
-          >
+          <p>
             Home
           </p>
           <svg
@@ -37,39 +35,33 @@ exports[`NavBar Component should matches snapshot 1`] = `
       </li>
       <li>
         <a
-          class=" text-sm "
+          class=" text-sm"
           href="/shop"
           style="color: black;"
         >
-          <p
-            class="pb-2"
-          >
+          <p>
             Shop
           </p>
         </a>
       </li>
       <li>
         <a
-          class=" text-sm "
-          href="/about"
+          class=" text-sm"
+          href="/about-us"
           style="color: black;"
         >
-          <p
-            class="pb-2"
-          >
+          <p>
             About
           </p>
         </a>
       </li>
       <li>
         <a
-          class=" text-sm "
+          class=" text-sm"
           href="/contact"
           style="color: black;"
         >
-          <p
-            class="pb-2"
-          >
+          <p>
             Contact
           </p>
         </a>

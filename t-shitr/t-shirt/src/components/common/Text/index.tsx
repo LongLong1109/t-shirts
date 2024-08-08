@@ -9,7 +9,18 @@ interface ParagraphProps {
 }
 
 const Paragraph = ({ text, size, weight, color, style }: ParagraphProps) => {
-  return <p className={`text-${size} font-${weight} text-${color} ${style}`}>{text}</p>
+  const sizeClass = size ? `text-${size}` : ''
+  const weightClass = weight ? `font-${weight}` : ''
+  const colorClass = color ? `text-${color}` : ''
+  const styleClass = style ? style : ''
+
+  return (
+    <p
+      className={`text-black dark:text-white-100 ${sizeClass} ${weightClass} ${colorClass} ${styleClass}`}
+    >
+      {text}
+    </p>
+  )
 }
 
 export default Paragraph

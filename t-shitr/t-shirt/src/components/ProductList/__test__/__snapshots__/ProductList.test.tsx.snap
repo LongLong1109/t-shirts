@@ -3,7 +3,7 @@
 exports[`ProductList Component should matches snapshot 1`] = `
 <div>
   <div
-    class="flex flex-wrap gap-10"
+    class="flex flex-wrap gap-20 justify-center"
   >
     <div
       class="flex flex-col w-64 shadow-md cursor-pointer"
@@ -29,12 +29,12 @@ exports[`ProductList Component should matches snapshot 1`] = `
           class="flex justify-between items-center"
         >
           <h3
-            class="text-xs font-bold"
+            class="text-xs font-bold text-dark-100"
           >
             Smart T-shirt
           </h3>
           <p
-            class="text-xs font-bold"
+            class="text-xs font-bold text-dark-100"
           >
             40
             $
@@ -149,12 +149,12 @@ exports[`ProductList Component should matches snapshot 1`] = `
           class="flex justify-between items-center"
         >
           <h3
-            class="text-xs font-bold"
+            class="text-xs font-bold text-dark-100"
           >
             Cool Jacket
           </h3>
           <p
-            class="text-xs font-bold"
+            class="text-xs font-bold text-dark-100"
           >
             120
             $
@@ -269,12 +269,12 @@ exports[`ProductList Component should matches snapshot 1`] = `
           class="flex justify-between items-center"
         >
           <h3
-            class="text-xs font-bold"
+            class="text-xs font-bold text-dark-100"
           >
             Jeen Jacket
           </h3>
           <p
-            class="text-xs font-bold"
+            class="text-xs font-bold text-dark-100"
           >
             180
             $

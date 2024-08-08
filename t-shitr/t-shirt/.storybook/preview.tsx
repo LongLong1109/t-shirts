@@ -9,7 +9,13 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    nextjs: {
+      appDirectory: true,
+      navigation: {
+        pathname: "/home",
+      },
+    },
   },
-}
+};
 
 export default preview

@@ -12,7 +12,9 @@ exports[`Product Component should matches snapshot 1`] = `
         data-nimg="1"
         decoding="async"
         height="248"
-        src=""
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fbizweb.dktcdn.net%2Fthumb%2F1024x1024%2F100%2F438%2F926%2Fproducts%2F789478255402240601566376674779.png%3Fv%3D1633577887370&w=640&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fbizweb.dktcdn.net%2Fthumb%2F1024x1024%2F100%2F438%2F926%2Fproducts%2F789478255402240601566376674779.png%3Fv%3D1633577887370&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fbizweb.dktcdn.net%2Fthumb%2F1024x1024%2F100%2F438%2F926%2Fproducts%2F789478255402240601566376674779.png%3Fv%3D1633577887370&w=640&q=75 2x"
         style="color: transparent; width: 100%; height: 248px;"
         width="300"
       />
@@ -24,14 +26,14 @@ exports[`Product Component should matches snapshot 1`] = `
         class="flex justify-between items-center"
       >
         <h3
-          class="text-xs font-bold"
+          class="text-xs font-bold text-dark-100"
         >
           Smart T-shirt
         </h3>
         <p
-          class="text-xs font-bold"
+          class="text-xs font-bold text-dark-100"
         >
-          40$
+          40
           $
         </p>
       </div>

@@ -17,12 +17,13 @@ const Quantity = ({ value, onInCrease, onDeCrease }: QuantityProps) => {
   return (
     <div className='flex justify-center items-center gap-8 border border-dark-90 p-2 h-12 bg-white-100'>
       <IconButton
-        icon={<MinusIcon color={`${isDecrementDisabled ? '#969696' : ''}`} />}
+        className='w-6 h-6 text-dark-90'
+        icon={<MinusIcon />}
         onClick={onDeCrease}
         disabled={isDecrementDisabled}
       />
       <Paragraph text={`${value}`} />
-      <IconButton icon={<PlusIcon />} onClick={onInCrease} />
+      <IconButton className='w-6 h-6 text-dark-90' icon={<PlusIcon />} onClick={onInCrease} />
     </div>
   )
 }

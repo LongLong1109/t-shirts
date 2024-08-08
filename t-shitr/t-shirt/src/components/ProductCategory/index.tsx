@@ -1,62 +1,47 @@
-'use client'
-import { useEffect, useState, Suspense, lazy } from 'react'
+import { Suspense, lazy } from 'react'
 
 // components
 import { Paragraph } from '@/components/common'
 import { Category } from '@/components'
-import ProductSkeleton from '@/components/ProductCategory/productSkeleton'
+import ProductSkeleton from '@/components/Skeleton/productSkeleton'
 
-// services
-import { getProducts } from '@/services/productApi'
+// components
+const ProductList = lazy(() => import('@/components/ProductList'))
 
-// constants
-import { BASE_URL } from '@/constants/baseUrl'
-
-const ProductCategory = () => {
-  const ProductList = lazy(() => import('@/components/ProductList'))
-  const [productList, setProductList] = useState([])
-
-  useEffect(() => {
-    const getProductList = async () => {
-      const response = await getProducts(`${BASE_URL}/products`)
-      setProductList(response)
-      return response
-    }
-    getProductList()
-  }, [])
-
-  return (
-    <section className='bg-white-100'>
-      <div className='mx-auto max-w-[1440px]'>
-        <div className='flex justify-between p-20'>
-          <div className='w-1/3'>
-            <Paragraph text='choose your category' style='uppercase pb-4 text-sm text-dark-50' />
-            <Paragraph text='Categories Style' style='text-lg pb-6' weight='bold' />
-            <Paragraph
-              style='text-dark-10'
-              text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
-            />
-          </div>
-
-          <div className='w-1/2'>
-            <Category />
-          </div>
+const ProductCategory = () => (
+  <section className='bg-white-100 dark:bg-gray-900'>
+    <div className='mx-auto max-w-[1440px]'>
+      <div className='flex lg:flex-row justify-between p-20 sm:flex-col sm:gap-10'>
+        <div className='lg:w-1/3 sm:w-full'>
+          <Paragraph
+            text='choose your category'
+            style='uppercase pb-4 text-sm dark:text-dark-50 text-dark-50'
+          />
+          <Paragraph text='Categories Style' style='lg:text-lg pb-6 sm:text-sm' weight='bold' />
+          <Paragraph
+            style='text-dark-10'
+            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
+          />
         </div>
 
-        <div className='flex flex-col items-center pb-20'>
-          <Paragraph
-            text='choose from the best products'
-            color='dark-50'
-            style='uppercase text-sm'
-          />
-
-          <h2 className='capitalize text-lg font-bold'>out best seller product</h2>
-          <Suspense fallback={<ProductSkeleton />}>
-            <ProductList productList={productList} />
-          </Suspense>
+        <div className='lg:w-1/2 sm:w-full'>
+          <Category />
         </div>
       </div>
-    </section>
-  )
-}
+
+      <div className='flex flex-col items-center pb-20'>
+        <Paragraph
+          text='choose from the best products'
+          style='dark:text-dark-50 text-dark-50 uppercase text-sm'
+        />
+
+        <h2 className='capitalize lg:text-lg font-bold sm:text-sm pb-4'>out best seller product</h2>
+        <Suspense fallback={<ProductSkeleton />}>
+          <ProductList />
+        </Suspense>
+      </div>
+    </div>
+  </section>
+)
+
 export default ProductCategory

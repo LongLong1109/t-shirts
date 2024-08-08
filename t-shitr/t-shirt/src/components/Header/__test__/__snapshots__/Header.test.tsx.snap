@@ -3,7 +3,7 @@
 exports[`Header should renders correctly 1`] = `
 <div>
   <header
-    class="fixed top-0 left-0 z-50 flex items-center justify-between px-32 bg-white-100 h-20 w-full"
+    class="fixed top-0 left-0 z-50 flex items-center lg:justify-between sm:justify-around lg:px-32 sm:px-4 bg-white-100 h-20 w-full"
   >
     <div
       class="flex items-center gap-2"
@@ -39,118 +39,144 @@ exports[`Header should renders correctly 1`] = `
           stroke-width="3.56014"
         />
       </svg>
-      <p
-        class="text-undefined font-bold text-undefined"
+      <h2
+        class="text-dark-100 font-bold"
       >
         mangcoding Store
-      </p>
+      </h2>
     </div>
     <div
-      class="flex items-center"
+      class="flex items-center gap-4"
     >
-      <nav
-        class="flex"
-      >
-        <ul
-          class="flex gap-10"
-        >
-          <li>
-            <a
-              class="active font-bold flex flex-col items-center text-sm "
-              href="/"
-              style="color: blue;"
-            >
-              <p>
-                Home
-              </p>
-              <svg
-                fill="none"
-                height="4"
-                viewBox="0 0 4 4"
-                width="4"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="2"
-                  cy="2"
-                  fill="#5463FF"
-                  r="2"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              class=" text-sm "
-              href="/shop"
-              style="color: black;"
-            >
-              <p>
-                Shop
-              </p>
-            </a>
-          </li>
-          <li>
-            <a
-              class=" text-sm "
-              href="/about"
-              style="color: black;"
-            >
-              <p>
-                About
-              </p>
-            </a>
-          </li>
-          <li>
-            <a
-              class=" text-sm "
-              href="/contact"
-              style="color: black;"
-            >
-              <p>
-                Contact
-              </p>
-            </a>
-          </li>
-        </ul>
-      </nav>
       <div
-        class="px-6 flex gap-6 items-center"
+        class="hidden md:block"
       >
-        <svg
-          fill="none"
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
+        <nav
+          class="flex sm:bg-white-100 sm:w-full"
         >
-          <path
-            d="M6.12403 9.03885C6.2568 7.97675 7.42732 7.39149 8.35666 7.92254L10.7597 9.29568C11.5282 9.73487 12.4718 9.73487 13.2403 9.29568L15.6433 7.92254C16.5727 7.39149 17.7432 7.97675 17.876 9.03885L19.2229 19.8139C19.3348 20.7092 18.6367 21.5 17.7344 21.5H6.26556C5.36332 21.5 4.66524 20.7092 4.77715 19.8139L6.12403 9.03885Z"
-            stroke="#0D1222"
-          />
-          <path
-            d="M15 6V4.01042C15 2.89583 14.0076 2 12.7985 2H11.2015C9.98099 2 9 2.90625 9 4.01042V6"
-            stroke="#0D1222"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
-            stroke-width="1.2"
-          />
-          <circle
-            cx="9"
-            cy="12"
-            r="0.8"
-            stroke="#0D1222"
-            stroke-width="0.4"
-          />
-          <circle
-            cx="15"
-            cy="12"
-            r="0.8"
-            stroke="#0D1222"
-            stroke-width="0.4"
-          />
-        </svg>
+          <ul
+            class="flex md:flex-row md:p-0 gap-10 sm:flex-col sm:p-10"
+          >
+            <li>
+              <a
+                class="active font-bold flex flex-col items-center text-sm"
+                href="/home"
+                style="color: blue;"
+              >
+                <p>
+                  Home
+                </p>
+                <svg
+                  fill="none"
+                  height="4"
+                  viewBox="0 0 4 4"
+                  width="4"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="2"
+                    cy="2"
+                    fill="#5463FF"
+                    r="2"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class=" text-sm"
+                href="/shop"
+                style="color: black;"
+              >
+                <p>
+                  Shop
+                </p>
+              </a>
+            </li>
+            <li>
+              <a
+                class=" text-sm"
+                href="/about-us"
+                style="color: black;"
+              >
+                <p>
+                  About
+                </p>
+              </a>
+            </li>
+            <li>
+              <a
+                class=" text-sm"
+                href="/contact"
+                style="color: black;"
+              >
+                <p>
+                  Contact
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="block md:hidden"
+      >
+        <button>
+          <svg
+            height="24px"
+            viewBox="0 0 50 50"
+            width="24px"
+            x="0px"
+            xmlns="http://www.w3.org/2000/svg"
+            y="0px"
+          >
+            <path
+              d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="px-6 gap-6 items-center sm:hidden lg:flex"
+      >
+        <a
+          href="/login"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.12403 9.03885C6.2568 7.97675 7.42732 7.39149 8.35666 7.92254L10.7597 9.29568C11.5282 9.73487 12.4718 9.73487 13.2403 9.29568L15.6433 7.92254C16.5727 7.39149 17.7432 7.97675 17.876 9.03885L19.2229 19.8139C19.3348 20.7092 18.6367 21.5 17.7344 21.5H6.26556C5.36332 21.5 4.66524 20.7092 4.77715 19.8139L6.12403 9.03885Z"
+              stroke="#0D1222"
+            />
+            <path
+              d="M15 6V4.01042C15 2.89583 14.0076 2 12.7985 2H11.2015C9.98099 2 9 2.90625 9 4.01042V6"
+              stroke="#0D1222"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="1.2"
+            />
+            <circle
+              cx="9"
+              cy="12"
+              r="0.8"
+              stroke="#0D1222"
+              stroke-width="0.4"
+            />
+            <circle
+              cx="15"
+              cy="12"
+              r="0.8"
+              stroke="#0D1222"
+              stroke-width="0.4"
+            />
+          </svg>
+        </a>
         <svg
           fill="none"
           height="20"
@@ -167,36 +193,56 @@ exports[`Header should renders correctly 1`] = `
             stroke-width="1.2"
           />
         </svg>
-        <svg
-          fill="none"
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
+        <a
+          href="/login"
         >
-          <circle
-            cx="12"
-            cy="7"
-            r="2.5"
-            stroke="#0D1222"
-          />
-          <path
-            d="M5.5 19C5.5 15.4101 8.41015 12.5 12 12.5C15.5899 12.5 18.5 15.4101 18.5 19V19.5H5.5V19Z"
-            stroke="#0D1222"
-          />
-        </svg>
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="7"
+              r="2.5"
+              stroke="#0D1222"
+            />
+            <path
+              d="M5.5 19C5.5 15.4101 8.41015 12.5 12 12.5C15.5899 12.5 18.5 15.4101 18.5 19V19.5H5.5V19Z"
+              stroke="#0D1222"
+            />
+          </svg>
+        </a>
       </div>
-      <div>
-        <div
-          class="relative flex items-center"
-        >
-          <input
-            class="outline-none px-6 py-3  outline border border-dark-90 rounded-xl"
-            placeholder="Search"
-            type="search"
-            value=""
-          />
+      <div
+        class="hidden lg:block"
+      >
+        <div>
+          <div
+            class="relative flex items-center"
+          >
+            <input
+              class="outline-none px-6 py-3 bg-white-100  outline border border-dark-90 rounded-xl bg-white-100"
+              placeholder="Search"
+              type="search"
+              value=""
+            />
+          </div>
         </div>
+      </div>
+      <div
+        class="sm:hidden md:block"
+      >
+        <button
+          class="bg-gray-200 relative inline-flex items-center h-6 w-11 rounded-full transition-colors duration-300 ease-in-out focus:outline-none"
+          type="button"
+        >
+          <span
+            class="translate-x-1 bg-blue-600 inline-block w-4 h-4 transform bg-white rounded-full transition-transform duration-300 ease-in-out shadow"
+          />
+        </button>
       </div>
     </div>
   </header>

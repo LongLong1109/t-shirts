@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 // components
-import { Carousel } from '@/components'
+import Carousel from '@/components/Carousel'
 
 // mock
 import { categoriesStyle } from '@/mocks'
@@ -12,7 +12,7 @@ const Category = () => {
   const [currentCategory, setCurrentCategory] = useState(0)
 
   return (
-    <div className='flex justify-end items-center gap-4'>
+    <div className='flex justify-end items-center gap-4 sm:flex-col md:flex-row'>
       <Carousel
         images={categoriesStyle}
         style='max-w-[360px] max-h-[230px]'

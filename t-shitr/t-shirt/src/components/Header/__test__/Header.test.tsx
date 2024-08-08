@@ -1,29 +1,44 @@
 import { render, screen } from '@testing-library/react';
+import { usePathname } from 'next/navigation';
 
 // components
 import Header from '..';
 
+// constants
+import { PAGE_URL } from '@/constants/pageUrl';
+
+jest.mock('next/navigation', () => ({
+  usePathname: jest.fn(),
+}));
+
 describe('Header', () => {
-  const onSearchValue = jest.fn();
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   it('should renders correctly', () => {
-    const { container } = render(<Header searchValue='' onSearchValue={onSearchValue} />);
+    (usePathname as jest.Mock).mockReturnValue(PAGE_URL.HOME);
+    const { container } = render(<Header />);
     expect(container).toMatchSnapshot();
   });
 
   it('should displays the logo and store name', () => {
-    render(<Header searchValue='' onSearchValue={onSearchValue} />);
+    (usePathname as jest.Mock).mockReturnValue(PAGE_URL.HOME);
+    render(<Header />);
     expect(screen.getByText('mangcoding Store')).toBeInTheDocument();
   });
 
   it('should displays the navigation bar with correct items', () => {
-    render(<Header searchValue='' onSearchValue={onSearchValue} />);
+    (usePathname as jest.Mock).mockReturnValue(PAGE_URL.HOME);
+    render(<Header />);
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('Shop')).toBeInTheDocument();
     expect(screen.getByText('Contact')).toBeInTheDocument();
   });
 
   it('should displays the search input', () => {
-    render(<Header searchValue='' onSearchValue={onSearchValue} />);
+    (usePathname as jest.Mock).mockReturnValue(PAGE_URL.HOME);
+    render(<Header />);
     expect(screen.getByPlaceholderText('Search')).toBeInTheDocument();
   });
 });

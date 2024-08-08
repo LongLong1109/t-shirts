@@ -1,9 +1,14 @@
 import Product from '../Product'
-import { ProductListProps } from '@/interfaces/product'
+import { ProductProps } from '@/interfaces/product'
 
-const ProductList = ({ productList }: ProductListProps) => {
+// services
+import { getProductList } from '@/services/productApi'
+
+const ProductList = async () => {
+  const productList: ProductProps[] = await getProductList()
+
   return (
-    <div className='flex flex-wrap justify-center gap-10 px-10'>
+    <div className='flex flex-wrap gap-20 justify-center'>
       {productList.map(({ id, name, image, price }, index) => (
         <Product key={index} name={name} image={image} price={price} id={id} />
       ))}

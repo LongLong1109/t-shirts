@@ -3,9 +3,11 @@ import type { Config } from 'tailwindcss'
 import { backgroundImage, colors } from './src/themes/colors'
 import { fontSize, fontWeight } from './src/themes/fontStyle'
 import { spacing } from './src/themes/spacing'
+import { breakPoint } from './src/themes/breakpoint'
 
 export const themeConfig = {
   extend: {
+    screens: breakPoint,
     backgroundImage,
     fontSize,
     fontWeight,
@@ -15,6 +17,7 @@ export const themeConfig = {
 }
 
 const config: Config = {
+  darkMode: 'selector',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',

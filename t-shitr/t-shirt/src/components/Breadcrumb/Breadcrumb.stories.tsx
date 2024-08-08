@@ -14,12 +14,13 @@ export default meta
 type Story = StoryObj<typeof Breadcrumb>
 
 const breadcrumbPaths = [
-  { name: 'Home', link: '/home' },
-  { name: 'Shop', link: '/home/shop' },
+  { name: 'Home', link: '/' },
+  { name: 'Shop', link: '/shop' },
 ]
 
 export const BreadcrumbPrimary: Story = {
   args: {
     paths: breadcrumbPaths,
+    styleLink: 'text-dark-90',
   },
 }

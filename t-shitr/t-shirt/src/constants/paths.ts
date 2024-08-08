@@ -5,4 +5,6 @@ export const PATH_NAME = {
   MY_ACCOUNT: 'My Account',
   ABOUT_US: 'About Us',
   CONTACT: 'Contact',
+  SHOP: 'Shop',
+  CART: 'Cart',
 }

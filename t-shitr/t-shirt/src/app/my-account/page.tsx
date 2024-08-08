@@ -12,15 +12,17 @@ import { splitPath } from '@/utils/splitPath'
 // icons
 import { avatar } from '@/assets/images'
 
+// store
+import useAuth from '@/stores/useAuth'
+
 const MyAccount = () => {
+  const userAuth = useAuth((state) => state.userAuth)
+  const firstName = userAuth?.user?.firstName || ''
+  const lastName = userAuth?.user?.lastName
+  const userName = firstName + lastName
+  const email = userAuth?.user.email
   const pathName = usePathname()
   const paths = splitPath(pathName)
-
-  //TODO: should handle when api already
-  const mockData = {
-    email: 'example@domain.com',
-    name: 'user testing',
-  }
 
   return (
     <section className='bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100 p-10'>
@@ -40,8 +42,8 @@ const MyAccount = () => {
             <div className=''>
               <Image src={avatar} alt='avatar' />
             </div>
-            <h2 className='text-[24px] font-bold capitalize'>{mockData.name}</h2>
-            <p className='text-xs'>{mockData.email}</p>
+            <h2 className='text-[24px] font-bold capitalize'>{userName}</h2>
+            <p className='text-xs'>{email}</p>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import Carousel from '.'
 
 // mocks
-import { imageListMock } from '@/mocks/imageList'
+import { modelList } from '@/mocks/imageList'
 
 const meta = {
   title: 'Components/Carousel',
@@ -15,11 +15,13 @@ const meta = {
 } satisfies Meta<typeof Carousel>
 
 export default meta
+
 type Story = StoryObj<typeof Carousel>
 
 export const CarouselPrimary: Story = {
   args: {
-    images: imageListMock,
-    size: '64',
+    images: modelList,
+    size: 300,
+    style: 'w-full h-full',
   },
 }

@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Oblongers Component should matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100"
+  >
+    <div
+      class="flex justify-between lg:p-20 max-w-[1440px] mx-auto lg:flex-row md:flex-row sm:flex-col sm:p-4 sm:items-center"
+    >
+      <div
+        class="flex justify-between items-center gap-10 lg:w-1/3 md:w-1/3 sm:w-2/3"
+      >
+        <div
+          class="w-40"
+        >
+          <img
+            alt="suit"
+            class="w-100"
+            data-nimg="1"
+            decoding="async"
+            height="200"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+        </div>
+        <div
+          class="relative mx-auto overflow-hidden max-w-[260px] max-h-[383px]"
+        >
+          <div
+            class="flex transition-transform ease-in-out duration-1000"
+            style="transform: translateX(-0%);"
+          >
+            <div
+              class="min-w-full flex justify-center gap-8"
+            >
+              <img
+                alt="oblongerShirts"
+                class="w-undefined"
+                data-nimg="1"
+                decoding="async"
+                height="400"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg.jpg&w=828&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 1x, /_next/image?url=%2Fimg.jpg&w=828&q=75 2x"
+                style="color: transparent;"
+                width="400"
+              />
+            </div>
+            <div
+              class="min-w-full flex justify-center gap-8"
+            >
+              <img
+                alt="suit"
+                class="w-undefined"
+                data-nimg="1"
+                decoding="async"
+                height="400"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg.jpg&w=828&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 1x, /_next/image?url=%2Fimg.jpg&w=828&q=75 2x"
+                style="color: transparent;"
+                width="400"
+              />
+            </div>
+            <div
+              class="min-w-full flex justify-center gap-8"
+            >
+              <img
+                alt="oblongerShirts"
+                class="w-undefined"
+                data-nimg="1"
+                decoding="async"
+                height="400"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg.jpg&w=828&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 1x, /_next/image?url=%2Fimg.jpg&w=828&q=75 2x"
+                style="color: transparent;"
+                width="400"
+              />
+            </div>
+            <div
+              class="min-w-full flex justify-center gap-8"
+            >
+              <img
+                alt="suit"
+                class="w-undefined"
+                data-nimg="1"
+                decoding="async"
+                height="400"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg.jpg&w=828&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 1x, /_next/image?url=%2Fimg.jpg&w=828&q=75 2x"
+                style="color: transparent;"
+                width="400"
+              />
+            </div>
+          </div>
+          <button
+            class="absolute top-1/2 transform -translate-y-1/2 bg-blue-500 text-white-100 p-2 z-40"
+            data-testid="left-btn"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.6201 4.49999L8.50012 11.62L15.6201 18.74"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="10"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <button
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-blue-500 text-white-100 p-2"
+            data-testid="right-btn"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.37988 4.49999L15.4999 11.62L8.37988 18.74"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="10"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="lg:w-1/2 mt-4 sm:w-full md:w-1/2"
+      >
+        <h2
+          class="capitalize lg:text-lg font-bold text-white-100 sm:text-sm"
+        >
+          The Oblongers T-Shirt
+        </h2>
+        <div
+          class="flex justify-between pt-2"
+        >
+          <div>
+            <p
+              class="text-black dark:text-white-100 text-sm font-bold  "
+            >
+              Color
+            </p>
+            <div
+              class="flex gap-3 pt-4"
+            >
+              <label
+                class="flex items-center cursor-pointer"
+              >
+                <input
+                  checked=""
+                  class="appearance-none w-6 h-6 rounded-full bg-dark-100 bg-dark-100 border border-gray-300"
+                  id="black"
+                  name="Choose Color"
+                  type="radio"
+                  value="black"
+                />
+                <span
+                  class="absolute w-3 h-3 rounded-full bg-blue-500 ml-[6px]"
+                />
+              </label>
+              <label
+                class="flex items-center cursor-pointer"
+              >
+                <input
+                  class="appearance-none w-6 h-6 rounded-full bg-white-100 bg-dark-100 border border-gray-300"
+                  id="white"
+                  name="Choose Color"
+                  type="radio"
+                  value="white"
+                />
+                <span
+                  class="absolute w-3 h-3 rounded-full bg-transparent ml-[6px]"
+                />
+              </label>
+              <label
+                class="flex items-center cursor-pointer"
+              >
+                <input
+                  class="appearance-none w-6 h-6 rounded-full bg-green-100 bg-dark-100 border border-gray-300"
+                  id="green"
+                  name="Choose Color"
+                  type="radio"
+                  value="green"
+                />
+                <span
+                  class="absolute w-3 h-3 rounded-full bg-transparent ml-[6px]"
+                />
+              </label>
+            </div>
+          </div>
+          <div
+            class="flex pt-3 gap-2"
+          >
+            <span>
+              <svg
+                fill="none"
+                height="15"
+                viewBox="0 0 16 15"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.52414 0.475527C7.67315 0.0134852 8.32685 0.0134859 8.47586 0.475528L9.89821 4.88583C9.96494 5.09276 10.1578 5.23284 10.3752 5.23236L15.0091 5.22224C15.4946 5.22117 15.6966 5.84289 15.3032 6.12738L11.5483 8.84298C11.3722 8.97039 11.2985 9.19704 11.3661 9.40367L12.8078 13.8077C12.9588 14.2691 12.4299 14.6533 12.0378 14.3671L8.29478 11.6352C8.11916 11.507 7.88084 11.507 7.70522 11.6352L3.96221 14.3671C3.57007 14.6533 3.04121 14.2691 3.19224 13.8077L4.63385 9.40367C4.70149 9.19704 4.62785 8.97039 4.45167 8.84298L0.696751 6.12738C0.30337 5.84289 0.505377 5.22117 0.990852 5.22224L5.62483 5.23236C5.84225 5.23284 6.03506 5.09276 6.10179 4.88583L7.52414 0.475527Z"
+                  fill="#FFD43C"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg
+                fill="none"
+                height="15"
+                viewBox="0 0 16 15"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.52414 0.475527C7.67315 0.0134852 8.32685 0.0134859 8.47586 0.475528L9.89821 4.88583C9.96494 5.09276 10.1578 5.23284 10.3752 5.23236L15.0091 5.22224C15.4946 5.22117 15.6966 5.84289 15.3032 6.12738L11.5483 8.84298C11.3722 8.97039 11.2985 9.19704 11.3661 9.40367L12.8078 13.8077C12.9588 14.2691 12.4299 14.6533 12.0378 14.3671L8.29478 11.6352C8.11916 11.507 7.88084 11.507 7.70522 11.6352L3.96221 14.3671C3.57007 14.6533 3.04121 14.2691 3.19224 13.8077L4.63385 9.40367C4.70149 9.19704 4.62785 8.97039 4.45167 8.84298L0.696751 6.12738C0.30337 5.84289 0.505377 5.22117 0.990852 5.22224L5.62483 5.23236C5.84225 5.23284 6.03506 5.09276 6.10179 4.88583L7.52414 0.475527Z"
+                  fill="#FFD43C"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg
+                fill="none"
+                height="15"
+                viewBox="0 0 16 15"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.52414 0.475527C7.67315 0.0134852 8.32685 0.0134859 8.47586 0.475528L9.89821 4.88583C9.96494 5.09276 10.1578 5.23284 10.3752 5.23236L15.0091 5.22224C15.4946 5.22117 15.6966 5.84289 15.3032 6.12738L11.5483 8.84298C11.3722 8.97039 11.2985 9.19704 11.3661 9.40367L12.8078 13.8077C12.9588 14.2691 12.4299 14.6533 12.0378 14.3671L8.29478 11.6352C8.11916 11.507 7.88084 11.507 7.70522 11.6352L3.96221 14.3671C3.57007 14.6533 3.04121 14.2691 3.19224 13.8077L4.63385 9.40367C4.70149 9.19704 4.62785 8.97039 4.45167 8.84298L0.696751 6.12738C0.30337 5.84289 0.505377 5.22117 0.990852 5.22224L5.62483 5.23236C5.84225 5.23284 6.03506 5.09276 6.10179 4.88583L7.52414 0.475527Z"
+                  fill="#FFD43C"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg
+                fill="none"
+                height="15"
+                viewBox="0 0 16 15"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.52414 0.475527C7.67315 0.0134852 8.32685 0.0134859 8.47586 0.475528L9.89821 4.88583C9.96494 5.09276 10.1578 5.23284 10.3752 5.23236L15.0091 5.22224C15.4946 5.22117 15.6966 5.84289 15.3032 6.12738L11.5483 8.84298C11.3722 8.97039 11.2985 9.19704 11.3661 9.40367L12.8078 13.8077C12.9588 14.2691 12.4299 14.6533 12.0378 14.3671L8.29478 11.6352C8.11916 11.507 7.88084 11.507 7.70522 11.6352L3.96221 14.3671C3.57007 14.6533 3.04121 14.2691 3.19224 13.8077L4.63385 9.40367C4.70149 9.19704 4.62785 8.97039 4.45167 8.84298L0.696751 6.12738C0.30337 5.84289 0.505377 5.22117 0.990852 5.22224L5.62483 5.23236C5.84225 5.23284 6.03506 5.09276 6.10179 4.88583L7.52414 0.475527Z"
+                  fill="#FFD43C"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg
+                fill="none"
+                height="15"
+                viewBox="0 0 16 15"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.52414 0.475527C7.67315 0.0134852 8.32685 0.0134859 8.47586 0.475528L9.89821 4.88583C9.96494 5.09276 10.1578 5.23284 10.3752 5.23236L15.0091 5.22224C15.4946 5.22117 15.6966 5.84289 15.3032 6.12738L11.5483 8.84298C11.3722 8.97039 11.2985 9.19704 11.3661 9.40367L12.8078 13.8077C12.9588 14.2691 12.4299 14.6533 12.0378 14.3671L8.29478 11.6352C8.11916 11.507 7.88084 11.507 7.70522 11.6352L3.96221 14.3671C3.57007 14.6533 3.04121 14.2691 3.19224 13.8077L4.63385 9.40367C4.70149 9.19704 4.62785 8.97039 4.45167 8.84298L0.696751 6.12738C0.30337 5.84289 0.505377 5.22117 0.990852 5.22224L5.62483 5.23236C5.84225 5.23284 6.03506 5.09276 6.10179 4.88583L7.52414 0.475527Z"
+                  fill="#FFD43C"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div
+          class="flex justify-between pt-4 pb-6"
+        >
+          <div>
+            <p
+              class="text-black dark:text-white-100 text-sm font-bold text-white-100 "
+            >
+              Size
+            </p>
+            <div
+              class="flex gap-3 pt-4"
+            >
+              <label
+                class="flex items-center cursor-pointer"
+              >
+                <input
+                  checked=""
+                  class="appearance-none w-9 h-9 rounded-full bg-dark-50 border border-gray-300"
+                  id="size-s"
+                  name="Choose Size"
+                  type="radio"
+                  value="s"
+                />
+                <span
+                  class="absolute w-4 h-4 rounded-full ml-[11px] mb-[2px] flex items-center"
+                >
+                  <p
+                    class="text-white-100 font-bold"
+                  >
+                    S
+                  </p>
+                </span>
+              </label>
+              <label
+                class="flex items-center cursor-pointer"
+              >
+                <input
+                  class="appearance-none w-9 h-9 rounded-full bg-white-75 border border-gray-300"
+                  id="size-m"
+                  name="Choose Size"
+                  type="radio"
+                  value="m"
+                />
+                <span
+                  class="absolute w-4 h-4 rounded-full ml-[11px] mb-[2px] flex items-center"
+                >
+                  <p
+                    class=""
+                  >
+                    M
+                  </p>
+                </span>
+              </label>
+              <label
+                class="flex items-center cursor-pointer"
+              >
+                <input
+                  class="appearance-none w-9 h-9 rounded-full bg-white-75 border border-gray-300"
+                  id="size-l"
+                  name="Choose Size"
+                  type="radio"
+                  value="l"
+                />
+                <span
+                  class="absolute w-4 h-4 rounded-full ml-[11px] mb-[2px] flex items-center"
+                >
+                  <p
+                    class=""
+                  >
+                    L
+                  </p>
+                </span>
+              </label>
+              <label
+                class="flex items-center cursor-pointer"
+              >
+                <input
+                  class="appearance-none w-9 h-9 rounded-full bg-white-75 border border-gray-300"
+                  id="size-xl"
+                  name="Choose Size"
+                  type="radio"
+                  value="xl"
+                />
+                <span
+                  class="absolute w-4 h-4 rounded-full ml-[11px] mb-[2px] flex items-center"
+                >
+                  <p
+                    class=""
+                  >
+                    XL
+                  </p>
+                </span>
+              </label>
+            </div>
+          </div>
+          <p
+            class="text-black dark:text-white-100   text-white-100 lg:text-lg font-bold sm:text-sm"
+          >
+            50$
+          </p>
+        </div>
+        <p
+          class="text-black dark:text-white-100    text-white-90 sm:text-xs lg:text-sm"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, vel tempor dolor augue et lectus. Proin et lacus blandit quam semper placerat.
+        </p>
+        <div
+          class="flex pt-10 w-full"
+        >
+          <button
+            class="bg-white-100 px-12 py-2 h-12 text-purpleLinear-100 font-bold"
+            type="submit"
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

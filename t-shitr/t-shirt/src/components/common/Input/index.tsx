@@ -17,7 +17,7 @@ const Input = ({ icon, className, helperText, styleInput, ...rest }: InputProps)
     <div className={className}>
       <div className='relative flex items-center'>
         <input
-          className={`outline-none px-6 py-3 ${icon ? 'pr-10' : ''} ${styleInput}`}
+          className={`outline-none px-6 py-3 bg-white-100 ${icon ? 'pr-10' : ''} ${styleInput}`}
           {...rest}
         />
         {icon && <div className='absolute right-3 text-dark-90'>{icon}</div>}

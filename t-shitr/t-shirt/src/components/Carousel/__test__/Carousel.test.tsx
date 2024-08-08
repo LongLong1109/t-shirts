@@ -4,27 +4,34 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import Carousel from '..';
 
 // mocks
-import { imageListMock } from '@/mocks/imageList';
+import { modelList } from '@/mocks/imageList';
 
 describe('Carousel Component', () => {
+  const CarouselComponent = () => {
+    const setCurrentIndex = () => {};
+    const utils = render(
+      <Carousel images={modelList} size={400} currentIndex={0} setCurrentIndex={setCurrentIndex} />,
+    );
+    return { ...utils, setCurrentIndex };
+  };
   it('renders images correctly', () => {
-    render(<Carousel images={imageListMock} size='full' />);
+    CarouselComponent();
 
-    const carouselImages = screen.getAllByAltText(/image/);
-    expect(carouselImages).toHaveLength(imageListMock.length);
+    const carouselImages = screen.getAllByRole('img');
+    expect(carouselImages).toHaveLength(modelList.length);
   });
 
   it('handles next and previous slides correctly', async () => {
-    render(<Carousel images={imageListMock} size='full' />);
+    CarouselComponent();
 
-    let carouselImages = screen.getAllByAltText(/image/);
+    let carouselImages = screen.getAllByRole('img');
     expect(carouselImages[0]).toBeInTheDocument();
 
     const nextButton = screen.getByTestId('right-btn');
     fireEvent.click(nextButton);
 
     await waitFor(() => {
-      carouselImages = screen.getAllByAltText(/image/);
+      carouselImages = screen.getAllByRole('img');
       expect(carouselImages[1]).toBeInTheDocument();
     });
 
@@ -32,7 +39,7 @@ describe('Carousel Component', () => {
     fireEvent.click(prevButton);
 
     await waitFor(() => {
-      carouselImages = screen.getAllByAltText(/image/);
+      carouselImages = screen.getAllByRole('img');
       expect(carouselImages[0]).toBeInTheDocument();
     });
   });

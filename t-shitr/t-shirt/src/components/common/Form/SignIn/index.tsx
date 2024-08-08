@@ -26,7 +26,7 @@ const SignIn = ({ onSignIn, error }: SignInProps) => {
   })
 
   return (
-    <form className='form-group w-[588px]' onSubmit={handleSubmit(signInInput)}>
+    <form className='form-group w-[350px] md:w-[588px]' onSubmit={handleSubmit(signInInput)}>
       <label htmlFor='email' className='pb-2 text-white-100 font-bold'>
         Email
       </label>

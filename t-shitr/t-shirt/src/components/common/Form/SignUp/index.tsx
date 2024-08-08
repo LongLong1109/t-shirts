@@ -39,8 +39,8 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
 
   return (
     <form onSubmit={handleSubmit(signUpInput)}>
-      <div className='w-[588px]'>
-        <div className='w-full flex justify-between'>
+      <div className='w-[350px] md:w-[588px]'>
+        <div className='w-[350px] md:w-full flex justify-between flex-col md:flex-row'>
           <div>
             <label htmlFor='firstName' className='pb-2 text-white-100 font-bold'>
               First Name
@@ -53,7 +53,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
                   id='firstName'
                   placeholder='First Name'
                   helperText={fieldState.error?.message}
-                  styleInput='w-72 mt-2'
+                  styleInput='md:w-72 mt-2 w-full'
                   className='mb-4'
                   {...field}
                 />
@@ -75,7 +75,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
                   id='lastName'
                   placeholder='Last Name'
                   helperText={fieldState.error?.message}
-                  styleInput='w-72 mt-2'
+                  styleInput='md:w-72 mt-2 w-full'
                   className='mb-4'
                   {...field}
                 />

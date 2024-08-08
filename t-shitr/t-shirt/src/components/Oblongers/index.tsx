@@ -4,7 +4,10 @@ import Image from 'next/image'
 
 // component
 import { Paragraph, Button } from '@/components/common'
-import { Color, Star, SizeChart, Carousel } from '@/components'
+import Carousel from '@/components/Carousel'
+import Star from '@/components/Star'
+import SizeChart from '@/components/SizeChart'
+import Color from '@/components/RadioButtonGroup'
 
 // mocks
 import { oblongersShirt, sizeOptionsMock, radioButtonOptionsMock } from '@/mocks'
@@ -23,9 +26,9 @@ const Oblongers = () => {
   }
 
   return (
-    <section className='bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100 '>
-      <div className='flex justify-between p-20 max-w-[1440px] mx-auto'>
-        <div className='flex justify-between items-center gap-10 w-1/3'>
+    <section className='bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100'>
+      <div className='flex justify-between lg:p-20 max-w-[1440px] mx-auto lg:flex-row md:flex-row sm:flex-col sm:p-4 sm:items-center'>
+        <div className='flex justify-between items-center gap-10 lg:w-1/3 md:w-1/3 sm:w-2/3'>
           <div className='w-40'>
             <Image
               src={oblongersShirt[(currentOblongers + 1) % oblongersShirt.length].src}
@@ -47,14 +50,15 @@ const Oblongers = () => {
             setCurrentIndex={setCurrentOblongers}
           />
         </div>
-        <div className='w-1/2'>
-          <h2 className='capitalize text-lg font-bold text-white-100'>The Oblongers T-Shirt</h2>
+        <div className='lg:w-1/2 mt-4 sm:w-full md:w-1/2'>
+          <h2 className='capitalize lg:text-lg font-bold text-white-100 sm:text-sm'>
+            The Oblongers T-Shirt
+          </h2>
           <div className='flex justify-between pt-2'>
             <Color
               options={radioButtonOptionsMock}
               name='Choose Color'
               selectedValue={selectedColor}
-              color='white-100'
               onChange={handleChangeColor}
             />
             <Star />
@@ -69,13 +73,13 @@ const Oblongers = () => {
               onChange={handleChangeSize}
             />
 
-            <Paragraph text='50$' color='white-100' style='text-lg font-bold' />
+            <Paragraph text='50$' color='white-100' style='lg:text-lg font-bold sm:text-sm' />
           </div>
           <Paragraph
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, vel tempor dolor augue et lectus. Proin et lacus blandit quam semper placerat.'
-            style='text-white-90'
+            style='text-white-90 sm:text-xs lg:text-sm'
           />
-          <div className='flex pt-10'>
+          <div className='flex pt-10 w-full'>
             <Button type='submit' text='Order Now' />
           </div>
         </div>

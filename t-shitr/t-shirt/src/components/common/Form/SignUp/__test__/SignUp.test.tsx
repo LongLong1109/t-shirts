@@ -8,7 +8,7 @@ describe('SignUp component', () => {
 
   beforeEach(() => {
     jest.clearAllMocks();
-  }); 
+  });
 
   it('renders the SignUp form correctly', () => {
     render(<SignUp onSignUp={onSignUp} />);
@@ -18,7 +18,7 @@ describe('SignUp component', () => {
     expect(screen.getByLabelText(/email/i)).toBeInTheDocument();
     expect(screen.getByLabelText('Password')).toBeInTheDocument();
     expect(screen.getByLabelText('Entry Password Again')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /login/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Sign Up/i })).toBeInTheDocument();
   });
 
   it('submits the form with the correct data', async () => {
@@ -39,7 +39,7 @@ describe('SignUp component', () => {
     fireEvent.change(screen.getByLabelText('Entry Password Again'), {
       target: { value: 'password123' },
     });
-    fireEvent.click(screen.getByRole('button', { name: /login/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Sign Up/i }));
 
     await waitFor(() => {
       expect(onSignUp).toHaveBeenCalledWith({
@@ -61,7 +61,7 @@ describe('SignUp component', () => {
   it('displays validation errors when inputs are invalid', async () => {
     render(<SignUp onSignUp={onSignUp} />);
 
-    fireEvent.click(screen.getByRole('button', { name: /login/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Sign Up/i }));
 
     expect(await screen.findAllByText(/this field is required/i)).toHaveLength(2);
   });
@@ -75,7 +75,7 @@ describe('SignUp component', () => {
     fireEvent.change(screen.getByLabelText('Entry Password Again'), {
       target: { value: 'password456' },
     });
-    fireEvent.click(screen.getByRole('button', { name: /login/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Sign Up/i }));
 
     expect(await screen.findByText(/passwords do not match/i)).toBeInTheDocument();
   });

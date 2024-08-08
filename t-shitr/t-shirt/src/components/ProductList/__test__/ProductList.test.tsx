@@ -1,14 +1,33 @@
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
+import { useRouter } from 'next/navigation';
 
 // components
 import ProductList from '@/components/ProductList';
 
-// mocks
+// services
+import { getProductList } from '@/services/productApi';
+
+// constants
+import { PAGE_URL } from '@/constants/pageUrl';
 import { productListMock } from '@/mocks/productList';
 
+jest.mock('@/services/productApi');
+jest.mock('next/navigation', () => ({
+  useRouter: jest.fn(),
+}));
+
 describe('ProductList Component', () => {
-  it('should matches snapshot', () => {
-    const { container } = render(<ProductList productList={productListMock} />);
-    expect(container).toMatchSnapshot();
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('should matches snapshot', async () => {
+    (getProductList as jest.Mock).mockResolvedValue(productListMock);
+    (useRouter as jest.Mock).mockReturnValue(PAGE_URL.HOME);
+
+    const { container } = render(await ProductList());
+    waitFor(() => {
+      expect(container).toMatchSnapshot();
+    });
   });
 });

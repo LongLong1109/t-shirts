@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrandShirt Component should matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="w-full flex-wrap items-center justify-center gap-10 bg-white-90 sm:flex sm:flex-col sm:gap-10 sm:items-center sm:p-10 md:flex-row"
+  >
+    <div>
+      <img
+        alt="basset"
+        data-nimg="1"
+        decoding="async"
+        height="57"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="154"
+      />
+    </div>
+    <div>
+      <img
+        alt="furniture"
+        data-nimg="1"
+        decoding="async"
+        height="57"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="154"
+      />
+    </div>
+    <div>
+      <img
+        alt="lazBoy"
+        data-nimg="1"
+        decoding="async"
+        height="57"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="154"
+      />
+    </div>
+    <div>
+      <img
+        alt="blackHawk"
+        data-nimg="1"
+        decoding="async"
+        height="57"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="154"
+      />
+    </div>
+    <div>
+      <img
+        alt="levizt"
+        data-nimg="1"
+        decoding="async"
+        height="57"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="154"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;

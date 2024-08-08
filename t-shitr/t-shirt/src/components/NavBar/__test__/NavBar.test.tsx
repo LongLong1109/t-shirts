@@ -1,19 +1,30 @@
 import { render, screen } from '@testing-library/react';
+import { usePathname } from 'next/navigation';
 
 // components
 import NavBar from '@/components/NavBar';
 
-// mocks
-import { navBarListMock } from '@/mocks/navBarList';
+// constants
+import { PAGE_URL } from '@/constants/pageUrl';
+
+jest.mock('next/navigation', () => ({
+  usePathname: jest.fn(),
+}));
 
 describe('NavBar Component', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   it('should matches snapshot', () => {
-    const { container } = render(<NavBar navBarList={navBarListMock} />);
+    (usePathname as jest.Mock).mockReturnValue(PAGE_URL.HOME);
+    const { container } = render(<NavBar />);
     expect(container).toMatchSnapshot();
   });
 
   it('renders NavBar with provided navBarList', () => {
-    render(<NavBar navBarList={navBarListMock} />);
+    (usePathname as jest.Mock).mockReturnValue(PAGE_URL.HOME);
+    render(<NavBar />);
 
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('About')).toBeInTheDocument();
@@ -21,9 +32,10 @@ describe('NavBar Component', () => {
   });
 
   it('does not apply active class and styles to inactive items', () => {
-    render(<NavBar navBarList={navBarListMock} />);
+    (usePathname as jest.Mock).mockReturnValue(PAGE_URL.HOME);
+    render(<NavBar />);
 
     const inactiveItem = screen.getByText('About');
-    expect(inactiveItem).not.toHaveClass('active font-bold flex flex-col items-center');
+    expect(inactiveItem).not.toHaveClass('active');
   });
 });

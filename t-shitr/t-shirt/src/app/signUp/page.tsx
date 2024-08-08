@@ -18,16 +18,16 @@ export const metadata: Metadata = {
 }
 
 const SignUp = () => (
-  <section className='bg-gradient-with-image bg-no-repeat bg-cover bg-center p-10'>
+  <section className='bg-gradient-with-image bg-no-repeat bg-cover bg-center p-4 md:p-10'>
     <div
       className='max-w-[1440px] mx-auto'
       style={{ height: `calc(100vh - ${HEADER_HEIGHT} - ${FOOTER_HEIGHT})` }}
     >
       <Breadcrumb paths={loginPaths} />
-      <div className='flex flex-col w-1/2 pt-6'>
-        <h2 className='text-white-100 text-md font-bold pb-10'>My Account</h2>
+      <div className='flex flex-col w-full md:w-1/2 pt-6'>
+        <h2 className='text-white-100 text-sm md:text-md font-bold pb-10'>My Account</h2>
 
-        <h3 className='text-white-100 text-[36px] font-bold pb-6'>Sign Up</h3>
+        <h3 className='text-white-100 text-sm md:text-[36px] font-bold pb-6'>Sign Up</h3>
         <div className='flex gap-2 pb-10'>
           <Paragraph text='You have account?' color='white-100' />
           <Link className='text-white-100 font-bold' href={PAGE_URL.SIGN_IN}>

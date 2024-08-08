@@ -14,8 +14,5 @@ export default meta
 type Story = StoryObj<typeof Header>
 
 export const HeaderPrimary: Story = {
-  args: {
-    searchValue: '',
-    onSearchValue: () => {},
-  },
+  args: {},
 }

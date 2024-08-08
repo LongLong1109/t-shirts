@@ -7,7 +7,7 @@ const NotFound = () => {
   const router = useRouter()
 
   const handleGoHome = () => {
-    router.push('/home')
+    router.push('/')
   }
 
   return (

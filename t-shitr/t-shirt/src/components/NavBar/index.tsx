@@ -16,7 +16,7 @@ const NavBar = () => {
     <nav className='flex sm:bg-white-100 sm:w-full'>
       <ul className='flex md:flex-row md:p-0 gap-10 sm:flex-col sm:p-10'>
         {navBarListMock.map(({ url, name }, index) => {
-          const isActive = pathname.includes(url)
+          const isActive = pathname === url
           return (
             <li key={index}>
               <Link

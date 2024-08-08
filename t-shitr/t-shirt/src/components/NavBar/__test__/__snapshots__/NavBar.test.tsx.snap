@@ -11,7 +11,7 @@ exports[`NavBar Component should matches snapshot 1`] = `
       <li>
         <a
           class="active font-bold flex flex-col items-center text-sm"
-          href="/home"
+          href="/"
           style="color: blue;"
         >
           <p>

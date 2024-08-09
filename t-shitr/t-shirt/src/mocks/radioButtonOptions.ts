@@ -2,17 +2,17 @@ export const radioButtonOptionsMock = [
   {
     id: 'black',
     value: 'black',
-    style: 'bg-dark-100',
+    style: '#000',
   },
   {
     id: 'white',
     value: 'white',
-    style: 'bg-white-100',
+    style: '#fff',
   },
   {
     id: 'green',
     value: 'green',
-    style: 'bg-green-100',
+    style: '#7DAC5F',
   },
 ]
 

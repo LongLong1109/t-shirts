@@ -50,7 +50,7 @@ const Carousel = ({ images, size, style, currentIndex, setCurrentIndex }: Carous
         onClick={prevSlide}
         className={`absolute top-1/2 transform -translate-y-1/2 bg-blue-500 text-white-100 ${size ? 'p-0' : 'p-2'} z-40`}
         data-testid='left-btn'
-        name='left-btn'
+        aria-label='left-btn'
       >
         <LeftIcon />
       </button>
@@ -58,7 +58,7 @@ const Carousel = ({ images, size, style, currentIndex, setCurrentIndex }: Carous
         onClick={nextSlide}
         className={`absolute top-1/2 right-0 transform -translate-y-1/2 bg-blue-500 text-white-100 ${size ? 'p-0' : 'p-2'}`}
         data-testid='right-btn'
-        name='right-btn'
+        aria-label='right-btn'
       >
         <RightIcon />
       </button>

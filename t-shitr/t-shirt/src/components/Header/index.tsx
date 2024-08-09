@@ -13,7 +13,6 @@ import useAuth from '@/stores/useAuth'
 
 // constants
 import { PAGE_URL } from '@/constants/pageUrl'
-import SignIn from '@/components/common/Form/SignIn'
 
 const Header = () => {
   const userAuth = useAuth((state) => state.userAuth)
@@ -55,7 +54,7 @@ const Header = () => {
         </div>
 
         <div className='block md:hidden'>
-          <button onClick={handleOpenNavBar} name='menu-icon'>
+          <button onClick={handleOpenNavBar} aria-label='menu-icon'>
             <MenuIcon />
           </button>
         </div>

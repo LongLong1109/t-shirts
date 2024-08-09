@@ -11,7 +11,7 @@ import { Paragraph, Button } from '@/components/common'
 
 const Footer = () => (
   <footer className='bg-dark-75 py-10 px-8 md:p-10 w-full'>
-    <div className='flex flex-col md:flex-row justify-between items-start md:h-[250px]'>
+    <div className='flex flex-col md:flex-row justify-between items-start'>
       <div className='w-full md:w-1/3 mb-10 md:mb-0'>
         <div className='flex items-center gap-2 pb-6'>
           <LogoIcon />

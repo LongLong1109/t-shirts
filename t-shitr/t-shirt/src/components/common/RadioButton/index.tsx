@@ -15,6 +15,7 @@ const RadioButton = ({ id, name, value, isChecked, onChange, inputStyle }: Radio
   return (
     <label className='flex items-center cursor-pointer'>
       <input
+        aria-label={`${name}-radio`}
         type='radio'
         id={id}
         name={name}

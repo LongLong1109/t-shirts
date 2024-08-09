@@ -15,6 +15,7 @@ const Size = ({ id, name, value, isChecked, onChange, label }: SizeProps) => {
   return (
     <label className='flex items-center cursor-pointer'>
       <input
+        aria-label={`${name}-radio`}
         type='radio'
         id={id}
         name={name}

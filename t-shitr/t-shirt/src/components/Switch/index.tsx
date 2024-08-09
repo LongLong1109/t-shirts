@@ -11,6 +11,7 @@ const SwitchTheme = ({ isEnabled, onChange }: SwitchProps) => {
   return (
     <button
       type='button'
+      aria-label='toggle'
       className={`${
         isEnabled ? 'bg-blue-600' : 'bg-gray-200'
       } relative inline-flex items-center h-6 w-11 rounded-full transition-colors duration-300 ease-in-out focus:outline-none`}

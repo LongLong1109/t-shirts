@@ -55,7 +55,7 @@ const Header = () => {
         </div>
 
         <div className='block md:hidden'>
-          <button onClick={handleOpenNavBar}>
+          <button onClick={handleOpenNavBar} name='menu-icon'>
             <MenuIcon />
           </button>
         </div>

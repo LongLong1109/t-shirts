@@ -51,12 +51,16 @@ const Footer = () => (
             )}
             {section.social && (
               <div>
-                <nav className='list-none flex gap-2 pt-4'>
-                  {section.social.map((socialLink, socialIndex) => (
-                    <li key={socialIndex}>
-                      <Link href={socialLink.url}>{socialLink.icon}</Link>
-                    </li>
-                  ))}
+                <nav className='pt-4'>
+                  <ul className='list-none flex gap-2'>
+                    {section.social.map((socialLink, socialIndex) => (
+                      <li key={socialIndex}>
+                        <Link href={socialLink.url} aria-label='social-icon'>
+                          {socialLink.icon}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </nav>
               </div>
             )}

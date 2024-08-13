@@ -29,6 +29,18 @@
 - Apply React Hook Form for validate form
 - Apply Unit test
 
+## FEATURES
+
+- Login, Register
+- Validate form, handle error
+- Show list product
+- Add product to cart, delete product from cart
+- Calculate items prices
+- Show product detail
+- Chose size, color, increase or decrease the number of products
+- Show user full name when login or register
+- Loading more product
+
 ## TECHNICAL
 
 - [React v18](https://react.dev/): ReactJS is a JavaScript library for building user interfaces.
@@ -45,6 +57,34 @@
 
 - Visual studio code
 
+## TEAM SIZE
+
+- 1 developer
+
 ## TIMELINE
 
-- Original Estimate: Jul 8, 2024 to Jul 25, 2024.
+- Original Estimate: Jul 8, 2024 to Aug 8, 2024.
+
+## DESIGN
+
+- [Figma](<https://www.figma.com/design/gk1hjQfiDVrINES2HjNlfW/T-Shirt-Website-(Community)-(Community)?node-id=0-1&t=mWqIlO1XPsQpguwF-0>)
+
+## GETTING STARTED
+
+Run command step by step
+
+| Command                                                                                         | Action                        |
+| :---------------------------------------------------------------------------------------------- | :---------------------------- |
+| `$ git clone -b feature/practice-one git@gitlab.asoft-python.com:long.tran/nextjs-training.git` | Clone Repository              |
+| `$ cd practice-one/t-shirt`                                                                     | Redirect to folder            |
+| `$ npm i pnpm` or `$ pnpm install`                                                              | Install packages dependencies |
+| `$ pnpm dev`                                                                                    | Run webpage                   |
+| `$ pnpm test`                                                                                   | Run unit test                 |
+
+## STORYBOOK
+
+- Storybook: [link](https://66b474e58d07814a439cbeba-vrpjbunrqy.chromatic.com/)
+
+## PRODUCTION
+
+- Product: [t-shirts-project.vercel.app](https://t-shirts-project.vercel.app/)

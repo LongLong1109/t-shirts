@@ -1,14 +1,16 @@
-'use client'
-import { usePathname } from 'next/navigation'
+// constants
+import { PATH_NAME } from '@/constants/paths'
+import { PAGE_URL } from '@/constants/pageUrl'
+
+// utils
+import { createPaths } from '@/utils/createPath'
+
+// components
 import { Breadcrumb } from '@/components'
 import { Paragraph } from '@/components/common'
 
-// utils
-import { splitPath } from '@/utils/splitPath'
-
 const Contact = () => {
-  const pathName = usePathname()
-  const paths = splitPath(pathName)
+  const paths = createPaths(PATH_NAME.CONTACT, PAGE_URL.CONTACT)
 
   return (
     <section className='bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100 p-10'>

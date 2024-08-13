@@ -1,9 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 // components
 import { Star } from '@/components'
-import { Paragraph, Button } from '@/components/common'
+import { Paragraph } from '@/components/common'
 import { user, shirts } from '@/assets/images'
+import { PAGE_URL } from '@/constants/pageUrl'
 
 const Testimonials = () => (
   <section className='bg-white-100 dark:bg-gray-900'>
@@ -49,7 +51,7 @@ const Testimonials = () => (
         </div>
       </div>
       <div className='flex justify-center gap-6 lg:pt-20 sm:pt-10 sm:flex-col sm:items-center md:flex-row'>
-        <div className='flex flex-col w-2/5 sm:w-full sm:items-center'>
+        <div className='flex flex-col w-2/5 sm:w-full sm:items-center lg:items-start'>
           <h2 className='capitalize text-md font-bold pb-3 sm:text-sm md:text-md'>
             look for models now
           </h2>
@@ -61,11 +63,12 @@ const Testimonials = () => (
             />
           </div>
           <div className='flex pt-10'>
-            <Button
-              type='submit'
-              text='Login Now'
-              className='bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100 text-white-100 px-12 py-2 h-12 font-bold'
-            />
+            <Link
+              href={PAGE_URL.SIGN_IN}
+              className='flex items-center bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100 text-white-100 px-12 py-2 h-12 font-bold'
+            >
+              Login Now
+            </Link>
           </div>
         </div>
         <div className='w-2/5 pb-20 sm:w-full'>

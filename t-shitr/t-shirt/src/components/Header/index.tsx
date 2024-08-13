@@ -1,18 +1,20 @@
 'use client'
 import { ChangeEvent, useState, useEffect } from 'react'
-import { LogoIcon, BagIcon, HeartIcon, UserIcon, MenuIcon } from '@/icons'
 import Link from 'next/link'
+
+// constants
+import { PAGE_URL } from '@/constants/pageUrl'
+
+// icons
+import { LogoIcon, BagIcon, HeartIcon, UserIcon, MenuIcon } from '@/icons'
+
+// store
+import useAuth from '@/stores/useAuth'
 
 // components
 import { Input } from '@/components/common'
 import NavBar from '@/components/NavBar'
 import SwitchTheme from '@/components/Switch'
-
-// store
-import useAuth from '@/stores/useAuth'
-
-// constants
-import { PAGE_URL } from '@/constants/pageUrl'
 
 const Header = () => {
   const userAuth = useAuth((state) => state.userAuth)
@@ -43,10 +45,10 @@ const Header = () => {
 
   return (
     <header className='fixed top-0 left-0 z-50 flex items-center lg:justify-between sm:justify-around lg:px-32 sm:px-4 bg-white-100 h-20 w-full'>
-      <div className='flex items-center gap-2'>
+      <Link className='flex items-center gap-2' href={PAGE_URL.HOME}>
         <LogoIcon />
         <h2 className='text-dark-100 font-bold'>mangcoding Store</h2>
-      </div>
+      </Link>
 
       <div className='flex items-center gap-4'>
         <div className='hidden md:block'>

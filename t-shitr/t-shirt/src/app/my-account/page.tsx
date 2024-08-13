@@ -1,13 +1,13 @@
 'use client'
-import { usePathname } from 'next/navigation'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
-// components
-import { Breadcrumb } from '@/components'
-import { Paragraph } from '@/components/common'
+// constants
+import { PATH_NAME } from '@/constants/paths'
+import { PAGE_URL } from '@/constants/pageUrl'
 
 // utils
-import { splitPath } from '@/utils/splitPath'
+import { createPaths } from '@/utils/createPath'
 
 // icons
 import { avatar } from '@/assets/images'
@@ -15,14 +15,23 @@ import { avatar } from '@/assets/images'
 // store
 import useAuth from '@/stores/useAuth'
 
+// components
+import { Breadcrumb } from '@/components'
+import { Paragraph, Button } from '@/components/common'
+
 const MyAccount = () => {
-  const userAuth = useAuth((state) => state.userAuth)
+  const [userAuth, logout] = useAuth((state) => [state.userAuth, state.logout])
   const firstName = userAuth?.user?.firstName || ''
   const lastName = userAuth?.user?.lastName
   const userName = firstName + lastName
   const email = userAuth?.user.email
-  const pathName = usePathname()
-  const paths = splitPath(pathName)
+  const paths = createPaths(PATH_NAME.MY_ACCOUNT, PAGE_URL.MY_ACCOUNT)
+  const router = useRouter()
+
+  const signOut = () => {
+    router.push(PAGE_URL.SIGN_IN)
+    logout()
+  }
 
   return (
     <section className='bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100 p-10'>
@@ -44,6 +53,7 @@ const MyAccount = () => {
             </div>
             <h2 className='text-[24px] font-bold capitalize'>{userName}</h2>
             <p className='text-xs'>{email}</p>
+            <Button text='Sign out' onClick={signOut} />
           </div>
         </div>
       </div>

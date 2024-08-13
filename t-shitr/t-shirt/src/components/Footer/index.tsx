@@ -2,15 +2,16 @@ import Link from 'next/link'
 
 // constants
 import { navData } from '@/constants/navData'
+import { PAGE_URL } from '@/constants/pageUrl'
 
 // icons
 import { LogoIcon } from '@/icons'
 
 // components
-import { Paragraph, Button } from '@/components/common'
+import { Paragraph } from '@/components/common'
 
 const Footer = () => (
-  <footer className='bg-dark-75 py-10 px-8 md:p-10 w-full'>
+  <footer className='bg-dark-75 py-10 px-8 md:p-10 w-full lg:p-20'>
     <div className='flex flex-col md:flex-row justify-between items-start'>
       <div className='w-full md:w-1/3 mb-10 md:mb-0'>
         <div className='flex items-center gap-2 pb-6'>
@@ -23,7 +24,12 @@ const Footer = () => (
           text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, vel tempor dolor augue et lectus. '
         />
         <div className='pt-10'>
-          <Button type='submit' text='Login Now' />
+          <Link
+            href={PAGE_URL.SIGN_IN}
+            className='bg-white-100 px-12 py-4 text-purpleLinear-100 font-bold'
+          >
+            Login Now
+          </Link>
         </div>
       </div>
 

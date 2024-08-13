@@ -14,13 +14,7 @@ const Paragraph = ({ text, size, weight, color, style }: ParagraphProps) => {
   const colorClass = color ? `text-${color}` : ''
   const styleClass = style ? style : ''
 
-  return (
-    <p
-      className={`text-black dark:text-white-100 ${sizeClass} ${weightClass} ${colorClass} ${styleClass}`}
-    >
-      {text}
-    </p>
-  )
+  return <p className={` ${sizeClass} ${weightClass} ${colorClass} ${styleClass}`}>{text}</p>
 }
 
 export default Paragraph

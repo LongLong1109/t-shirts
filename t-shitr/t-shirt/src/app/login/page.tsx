@@ -25,12 +25,16 @@ const Login = () => (
     >
       <Breadcrumb paths={signUpPaths} />
       <div className='flex flex-col pt-6 w-full md:w-1/2'>
-        <h2 className='text-white-100 text-sm md:text-md font-bold pb-10'>My Account</h2>
+        <h2 className='text-white-100 dark:text-dark-100 text-sm md:text-md font-bold pb-10'>
+          My Account
+        </h2>
 
-        <h3 className='text-white-100 text-sm md:text-[36px] font-bold pb-6'>Login</h3>
+        <h3 className='text-white-100 dark:text-dark-100 text-sm md:text-[36px] font-bold pb-6'>
+          Login
+        </h3>
         <div className='flex gap-2 pb-10'>
-          <Paragraph text="Don't have an account?" color='white-100' />
-          <Link className='text-white-100 font-bold' href={PAGE_URL.SIGN_UP}>
+          <Paragraph text="Don't have an account?" color='white-100 dark:text-dark-100' />
+          <Link className='text-white-100 dark:text-dark-100 font-bold' href={PAGE_URL.SIGN_UP}>
             Sign Up
           </Link>
         </div>

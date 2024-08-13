@@ -1,10 +1,11 @@
 import Image from 'next/image'
 
+// assets
+import { suit, shirt } from '@/assets/images'
+
 // components
 import { Paragraph, Button } from '@/components/common'
 import { ModelList } from '@/components'
-
-import { suit, shirt } from '@/assets/images'
 
 const Introduction = () => (
   <section className='flex justify-center bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100'>
@@ -15,12 +16,14 @@ const Introduction = () => (
           size='lg'
           style='text-white-100 lg:text-lg dark:text-black sm:text-sm'
           weight='bold'
+          color='white-100 dark:text-dark-100'
         />
 
         <Paragraph
           text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
           style='text-white-90 lg:text-sm dark:text-black sm:text-xs'
           size='sm'
+          color='white-100 dark:text-dark-100'
         />
 
         <div className='flex pt-4'>

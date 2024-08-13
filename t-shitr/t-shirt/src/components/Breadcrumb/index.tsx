@@ -17,14 +17,17 @@ const Breadcrumb = ({ paths, styleLink }: BreadcrumbProps) => (
       {paths.map(({ name, link }, index) => (
         <li key={index} className='breadcrumb-item mr-2 '>
           {link ? (
-            <Link className={styleLink ?? 'text-white-100'} href={link}>
+            <Link className={styleLink ?? 'text-white-100 dark:text-dark-100'} href={link}>
               {name}
             </Link>
           ) : (
             <span>{name}</span>
           )}
           {index < paths.length - 1 && (
-            <span className={`separator px-4 ${styleLink ?? 'text-white-100'}`}> / </span>
+            <span className={`separator px-4 ${styleLink ?? 'text-white-100 dark:text-dark-100'}`}>
+              {' '}
+              /{' '}
+            </span>
           )}
         </li>
       ))}

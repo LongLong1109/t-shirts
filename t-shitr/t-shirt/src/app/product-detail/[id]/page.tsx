@@ -21,7 +21,7 @@ export const generateMetadata = async ({ params }: ProductDetailProps) => {
 
 const ProductDetail = ({ params }: ProductDetailProps) => {
   return (
-    <div className=' bg-white-100 py-10'>
+    <div className='bg-white-100 dark:bg-gray-900 py-10'>
       <div className='px-4 md:px-10'>
         <div className='max-w-[1440px] mx-auto pb-20'>
           <Suspense fallback={<ProductDetailSkeleton />}>
@@ -30,7 +30,7 @@ const ProductDetail = ({ params }: ProductDetailProps) => {
         </div>
       </div>
 
-      <div className='bg-white-90 p-10'>
+      <div className='bg-white-90 dark:bg-gray-900 p-10'>
         <h2 className='font-bold text-[24px] text-center pb-10'>Description</h2>
         <div className='max-w-[1440px] mx-auto'>
           <h3 className='font-bold text-sm'>Detail product</h3>

@@ -22,7 +22,9 @@ const Input = ({ icon, className, helperText, styleInput, ...rest }: InputProps)
         />
         {icon && <div className='absolute right-3 text-dark-90'>{icon}</div>}
       </div>
-      {helperText ? <Paragraph text={helperText} style='text-primary-100 pt-2' /> : ''}
+      {helperText && (
+        <Paragraph text={helperText} style='text-primary-100 dark:text-primary-100 pt-2' />
+      )}
     </div>
   )
 }

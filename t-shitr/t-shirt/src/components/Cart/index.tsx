@@ -1,12 +1,16 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, memo } from 'react'
 import Image from 'next/image'
+import isEqual from 'react-fast-compare'
+
+// interfaces
+import { ProductProps } from '@/interfaces/product'
+
+// icons
+import DeleteIcon from '@/icons/deleteIcon'
 
 // components
 import { IconButton, Button } from '@/components/common'
 import { Quantity } from '@/components'
-import DeleteIcon from '@/icons/deleteIcon'
-
-import { ProductProps } from '@/interfaces/product'
 
 interface CartProps {
   cart: ProductProps[]
@@ -58,7 +62,7 @@ const Cart = ({ cart, onDelete, onIncrease, onDecrease }: CartProps) => {
       <div className='flex gap-10 flex-wrap'>
         <div className='flex flex-col flex-1 max-h-[767px] overflow-y-scroll gap-6 w-full sm:w-full md:w-3/4 lg:flex-1'>
           {cart.map(({ id, image, name, blurDataURL, color, price, inStock, quantity }, index) => (
-            <div key={index} className='p-10 bg-white-90'>
+            <div key={index} className='p-10 bg-white-90 dark:bg-dark-10 mx-4'>
               <div className='flex items-center justify-between gap-10 flex-wrap'>
                 <div className='w-full sm:w-auto'>
                   <Image
@@ -105,7 +109,7 @@ const Cart = ({ cart, onDelete, onIncrease, onDecrease }: CartProps) => {
             </div>
           ))}
         </div>
-        <div className='w-full sm:w-full md:w-1/4 lg:w-1/5 p-6 bg-white-90 max-h-[248px]'>
+        <div className='w-full sm:w-full md:w-1/4 lg:w-1/5 p-6 bg-white-90 dark:bg-dark-100 max-h-[248px]'>
           <div className='flex justify-between'>
             <div>
               <h2 className='font-bold text-[18px]'>Subtotal</h2>
@@ -133,4 +137,4 @@ const Cart = ({ cart, onDelete, onIncrease, onDecrease }: CartProps) => {
   )
 }
 
-export default Cart
+export default memo(Cart, isEqual)

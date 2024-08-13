@@ -27,7 +27,7 @@ const SignIn = ({ onSignIn, error }: SignInProps) => {
 
   return (
     <form className='form-group w-[350px] md:w-[588px]' onSubmit={handleSubmit(signInInput)}>
-      <label htmlFor='email' className='pb-2 text-white-100 font-bold'>
+      <label htmlFor='email' className='pb-2 text-white-100 dark:text-dark-100 font-bold'>
         Email
       </label>
 
@@ -38,7 +38,7 @@ const SignIn = ({ onSignIn, error }: SignInProps) => {
             id='email'
             placeholder='Email'
             helperText={fieldState.error?.message}
-            styleInput='w-full mt-2'
+            styleInput='w-full mt-2 text-dark-100'
             className='mb-4'
             {...field}
           />
@@ -48,7 +48,7 @@ const SignIn = ({ onSignIn, error }: SignInProps) => {
         name='email'
       />
 
-      <label htmlFor='password' className='pb-2 text-white-100 font-bold'>
+      <label htmlFor='password' className='pb-2 text-white-100 dark:text-dark-100 font-bold'>
         Password
       </label>
 
@@ -59,7 +59,7 @@ const SignIn = ({ onSignIn, error }: SignInProps) => {
             id='password'
             placeholder='Password'
             helperText={fieldState.error?.message}
-            styleInput='w-full mt-2'
+            styleInput='w-full mt-2 text-dark-100'
             className='mb-10'
             {...field}
           />

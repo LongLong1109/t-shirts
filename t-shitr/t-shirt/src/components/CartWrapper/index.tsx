@@ -1,10 +1,5 @@
 'use client'
 import { useCallback } from 'react'
-import { Breadcrumb, Cart } from '@/components'
-import { Paragraph } from '@/components/common'
-
-// utils
-import { createPaths } from '@/utils/createPath'
 
 // constants
 import { PATH_NAME } from '@/constants/paths'
@@ -14,8 +9,15 @@ import { DELETE_PRODUCT } from '@/constants/toast'
 // store
 import useProduct from '@/stores/useProduct'
 
+// utils
+import { createPaths } from '@/utils/createPath'
+
 // context
 import { useToast } from '@/contexts/toastProvider'
+
+// components
+import { Breadcrumb, Cart } from '@/components'
+import { Paragraph } from '@/components/common'
 
 const CartWrapper = () => {
   const { showToast } = useToast()
@@ -56,15 +58,15 @@ const CartWrapper = () => {
         <div className='max-w-[1440px] mx-auto'>
           <Breadcrumb paths={productCartPath} />
           <div className='flex flex-col w-1/2 pt-10'>
-            <h2 className='text-white-100 text-md font-bold pb-6'>Cart</h2>
+            <h2 className='text-white-100 dark:text-dark-100 text-md font-bold pb-6'>Cart</h2>
             <Paragraph
-              color='white-100'
+              color='white-100 dark:text-dark-100'
               text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
             />
           </div>
         </div>
       </div>
-      <div className='lg:p-20 p-4 bg-white-100'>
+      <div className='lg:p-20 p-4 bg-white-100 dark:bg-gray-900'>
         {cart.length ? (
           <Cart
             cart={cart}

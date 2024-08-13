@@ -4,29 +4,30 @@ import Image from 'next/image'
 import isEqual from 'react-fast-compare'
 import { useRouter } from 'next/navigation'
 
-// components
-import { Breadcrumb } from '@/components'
-import { Color, SizeChart, Quantity } from '@/components'
-import { Paragraph, Button } from '@/components/common'
-import CartIcon from '@/icons/cartIcon'
-
-// mocks
-import { radioButtonOptionsMock } from '@/mocks/radioButtonOptions'
-import { sizeOptionsMock } from '@/mocks/radioButtonOptions'
-
 // constants
 import { PRODUCT_IMAGES } from '@/constants/product'
 import { PATH_NAME } from '@/constants/paths'
 import { PAGE_URL } from '@/constants/pageUrl'
 
+// mocks
+import { radioButtonOptionsMock } from '@/mocks/radioButtonOptions'
+import { sizeOptionsMock } from '@/mocks/radioButtonOptions'
+
+// interfaces
+import { ProductProps } from '@/interfaces/product'
+
 // utils
 import { createPaths } from '@/utils/createPath'
-
-import { ProductProps } from '@/interfaces/product'
 
 // store
 import useProduct from '@/stores/useProduct'
 import useAuth from '@/stores/useAuth'
+
+// components
+import { Breadcrumb } from '@/components'
+import { Color, SizeChart, Quantity } from '@/components'
+import { Paragraph, Button } from '@/components/common'
+import CartIcon from '@/icons/cartIcon'
 
 const ProductDetailWrapper = ({ product }: { product: ProductProps }) => {
   const router = useRouter()
@@ -70,7 +71,7 @@ const ProductDetailWrapper = ({ product }: { product: ProductProps }) => {
 
   return (
     <>
-      <Breadcrumb paths={productDetailPath} styleLink='text-dark-100' />
+      <Breadcrumb paths={productDetailPath} styleLink='dark:text-white-100' />
       <div className='flex lg:justify-center lg:gap-10 gap-4 pt-10 flex-wrap lg:flex-nowrap'>
         <div className='md:w-1/2 w-full'>
           <div className='w-[340px] md:w-[688px] lg:w-[588px] md:h-[400px] pb-0 lg:pb-6'>
@@ -138,7 +139,7 @@ const ProductDetailWrapper = ({ product }: { product: ProductProps }) => {
 
             <div className='flex justify-between items-center mt-4'>
               <Quantity value={amount} onInCrease={handleInCrease} onDeCrease={handleDeCrease} />
-              <p className='text-dark-5 text-md font-medium'>${price} USD</p>
+              <p className='text-dark-5 dark:text-white-100 text-md font-medium'>${price} USD</p>
             </div>
           </div>
 

@@ -28,9 +28,9 @@ const MyAccount = () => {
   const paths = createPaths(PATH_NAME.MY_ACCOUNT, PAGE_URL.MY_ACCOUNT)
   const router = useRouter()
 
-  const signOut = () => {
+  const signOut = async () => {
     router.push(PAGE_URL.SIGN_IN)
-    logout()
+    await logout()
   }
 
   return (
@@ -39,17 +39,19 @@ const MyAccount = () => {
         <Breadcrumb paths={paths} />
         <div className='flex pt-6 justify-between'>
           <div className='flex flex-col w-1/2 '>
-            <h2 className='text-white-100 text-md font-bold pb-10'>My Account</h2>
+            <h2 className='text-white-100 dark:text-dark-100 text-md font-bold pb-10'>
+              My Account
+            </h2>
 
             <Paragraph
-              color='white-100'
+              color='white-100 dark:text-dark-100'
               text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
             />
           </div>
 
-          <div className='flex flex-col p-10 bg-white-100 shadow-xl items-center min-w-96 gap-2'>
-            <div className=''>
-              <Image src={avatar} alt='avatar' />
+          <div className='flex flex-col p-10 bg-white-100 dark:bg-gray-900 shadow-xl items-center min-w-96 gap-2'>
+            <div>
+              <Image src={avatar} alt='avatar' className='rounded-full' />
             </div>
             <h2 className='text-[24px] font-bold capitalize'>{userName}</h2>
             <p className='text-xs'>{email}</p>

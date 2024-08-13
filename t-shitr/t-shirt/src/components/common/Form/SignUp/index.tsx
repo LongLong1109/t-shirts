@@ -42,7 +42,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
       <div className='w-[350px] md:w-[588px]'>
         <div className='w-[350px] md:w-full flex justify-between flex-col md:flex-row'>
           <div>
-            <label htmlFor='firstName' className='pb-2 text-white-100 font-bold'>
+            <label htmlFor='firstName' className='pb-2 text-white-100 dark:text-dark-100 font-bold'>
               First Name
             </label>
 
@@ -53,8 +53,8 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
                   id='firstName'
                   placeholder='First Name'
                   helperText={fieldState.error?.message}
-                  styleInput='md:w-72 mt-2 w-full'
-                  className='mb-4'
+                  styleInput='md:w-72 mt-2 w-full text-dark-100'
+                  className='mb-4 t'
                   {...field}
                 />
               )}
@@ -64,7 +64,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
             />
           </div>
           <div>
-            <label htmlFor='lastName' className='pb-2 text-white-100 font-bold'>
+            <label htmlFor='lastName' className='pb-2 text-white-100 dark:text-dark-100 font-bold'>
               Last Name
             </label>
 
@@ -75,7 +75,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
                   id='lastName'
                   placeholder='Last Name'
                   helperText={fieldState.error?.message}
-                  styleInput='md:w-72 mt-2 w-full'
+                  styleInput='md:w-72 mt-2 w-full text-dark-100'
                   className='mb-4'
                   {...field}
                 />
@@ -86,7 +86,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
             />
           </div>
         </div>
-        <label htmlFor='email' className='pb-2 text-white-100 font-bold'>
+        <label htmlFor='email' className='pb-2 text-white-100 dark:text-dark-100 font-bold'>
           Email
         </label>
 
@@ -97,7 +97,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
               id='email'
               placeholder='Email'
               helperText={fieldState.error?.message}
-              styleInput='w-full mt-2'
+              styleInput='w-full mt-2 text-dark-100'
               className='mb-4'
               {...field}
             />
@@ -107,7 +107,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
           name='email'
         />
 
-        <label htmlFor='password' className='pb-2 text-white-100 font-bold'>
+        <label htmlFor='password' className='pb-2 text-white-100 dark:text-dark-100 font-bold'>
           Password
         </label>
 
@@ -118,7 +118,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
               id='password'
               placeholder='Password'
               helperText={fieldState.error?.message}
-              styleInput='w-full mt-2'
+              styleInput='w-full mt-2 text-dark-100'
               className='mb-4'
               {...field}
             />
@@ -128,7 +128,10 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
           name='password'
         />
 
-        <label htmlFor='entry-password' className='pb-2 text-white-100 font-bold'>
+        <label
+          htmlFor='entry-password'
+          className='pb-2 text-white-100 dark:text-dark-100 font-bold'
+        >
           Entry Password Again
         </label>
 
@@ -139,7 +142,7 @@ const SignUp = ({ onSignUp, error }: SignUpProps) => {
               id='entry-password'
               placeholder='Entry Password Again'
               helperText={fieldState.error?.message}
-              styleInput='w-full mt-2'
+              styleInput='w-full mt-2 text-dark-100'
               className='mb-10'
               {...field}
             />

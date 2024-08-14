@@ -14,11 +14,19 @@ interface CarouselProps {
   images: ImageProps[]
   size?: number
   style?: string
+  isVisibleImages?: boolean
   currentIndex: number
   setCurrentIndex: React.Dispatch<React.SetStateAction<number>>
 }
 
-const Carousel = ({ images, size, style, currentIndex, setCurrentIndex }: CarouselProps) => {
+const Carousel = ({
+  images,
+  size,
+  style,
+  currentIndex,
+  setCurrentIndex,
+  isVisibleImages,
+}: CarouselProps) => {
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
   }
@@ -27,20 +35,29 @@ const Carousel = ({ images, size, style, currentIndex, setCurrentIndex }: Carous
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
   }
 
+  const visibleImages = isVisibleImages ? images.length : 1
+
   return (
     <div className={`relative mx-auto overflow-hidden ${style}`}>
       <div
-        className='flex transition-transform ease-in-out duration-1000'
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        className={`flex transition-transform ease-in-out duration-1000 ${isVisibleImages && 'h-[80px]'}`}
+        style={{
+          transform: `translateX(-${(currentIndex * 100) / visibleImages}%)`,
+          width: isVisibleImages ? `${(images.length * 100) / visibleImages}%` : 'auto',
+        }}
       >
         {images.map((image, index) => (
-          <div key={index} className={`min-w-full flex justify-center gap-8`}>
+          <div
+            key={index}
+            className='flex-shrink-0 flex justify-center'
+            style={{ width: `${100 / visibleImages}%` }}
+          >
             <Image
               src={image.src}
               alt={image.alt}
               className={`w-${size}`}
               width={size}
-              height={400}
+              style={{ padding: isVisibleImages ? '8px' : '0' }}
             />
           </div>
         ))}

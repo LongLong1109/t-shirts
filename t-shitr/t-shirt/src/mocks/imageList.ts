@@ -13,6 +13,12 @@ export const modelList = [
     height: '200px',
     width: '250px',
   },
+  {
+    src: greenShirts,
+    alt: 'shirtIntroduce',
+    height: '200px',
+    width: '250px',
+  },
 ]
 
 export const categoriesStyle = [

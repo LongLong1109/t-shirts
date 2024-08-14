@@ -28,7 +28,7 @@ const Oblongers = () => {
   return (
     <section className='bg-gradient-to-b from-purpleLinear-50 to-purpleLinear-100'>
       <div className='flex justify-between lg:p-20 max-w-[1440px] mx-auto lg:flex-row md:flex-row sm:flex-col sm:p-4 sm:items-center'>
-        <div className='flex justify-between items-center gap-10 lg:w-1/3 md:w-1/3 sm:w-2/3'>
+        <div className='flex justify-between items-center gap-10 lg:w-1/2 md:w-1/3 sm:w-2/3'>
           <div className='w-40'>
             <Image
               src={oblongersShirt[(currentOblongers + 1) % oblongersShirt.length].src}
@@ -43,14 +43,17 @@ const Oblongers = () => {
             />
           </div>
 
-          <Carousel
-            images={oblongersShirt}
-            style='max-w-[260px] max-h-[383px]'
-            currentIndex={currentOblongers}
-            setCurrentIndex={setCurrentOblongers}
-          />
+          <div className='lg:max-w-[400px] sm:max-w-[120px] md:max-w-[300px]'>
+            <Carousel
+              images={oblongersShirt}
+              style='w-full h-full'
+              currentIndex={currentOblongers}
+              setCurrentIndex={setCurrentOblongers}
+              size={230}
+            />
+          </div>
         </div>
-        <div className='lg:w-1/2 mt-4 sm:w-full md:w-1/2'>
+        <div className='lg:w-[45%] mt-4 sm:w-full md:w-1/2'>
           <h2 className='capitalize lg:text-lg font-bold text-white-100 sm:text-sm dark:text-dark-100'>
             The Oblongers T-Shirt
           </h2>

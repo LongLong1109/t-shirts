@@ -2,11 +2,11 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
-// components
-import Carousel from '@/components/Carousel'
-
 // mocks
 import { modelList } from '@/mocks'
+
+// components
+import Carousel from '@/components/Carousel'
 
 const ModelList = () => {
   const [currentModel, setCurrentModel] = useState(0)
@@ -24,13 +24,14 @@ const ModelList = () => {
         }}
       />
 
-      <div className='absolute bottom-0 pb-4'>
+      <div className='absolute bottom-8 pb-4 max-w-[400px]'>
         <Carousel
           images={modelList}
-          size={50}
+          size={80}
           currentIndex={currentModel}
           setCurrentIndex={setCurrentModel}
-          style='max-w-44'
+          style='w-[300px] bg-black bg-opacity-50 rounded-md'
+          isVisibleImages
         />
       </div>
     </>

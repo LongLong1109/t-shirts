@@ -35,11 +35,11 @@ const Introduction = () => (
         <div className='flex flex-col items-center gap-6'>
           <Paragraph color='white-100' size='sm' weight='bold' text='More list' />
           <div>
-            <Image src={suit} alt='suit' width={172} height={286} />
+            <Image src={suit} alt='suit' width={172} height={286} priority />
           </div>
 
           <div>
-            <Image src={shirt} alt='shirt' width={146} height={219} />
+            <Image src={shirt} alt='shirt' width={146} height={219} priority />
           </div>
         </div>
         <div className='relative lg:w-[420px] lg:h-[540px] bg-white-100 flex justify-center items-center rounded-t-[100px] rounded-r-[100px] px-2 md:w-[420px] sm:w-[320px] sm:h-[540px]'>

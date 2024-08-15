@@ -21,7 +21,7 @@ const AboutUs = () => {
             About Us
           </h2>
           <Paragraph
-            color='white-100 dark:text-dark-100'
+            color='white-100 dark:text-dark-100 text-xs lg:text-sm'
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
           />
         </div>

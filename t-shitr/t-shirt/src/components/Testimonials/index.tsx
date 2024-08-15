@@ -16,7 +16,14 @@ const Testimonials = () => (
           <div className='flex justify-center gap-6 sm:flex-col md:flex-row'>
             <div className='w-2/5 p-10 shadow-xl bg-white-100 dark:bg-gray-900 sm:w-full'>
               <div className='flex gap-4 pb-3'>
-                <Image src={user} alt='user' width={48} height={48} className='rounded-full' />
+                <Image
+                  src={user}
+                  alt='user'
+                  width={48}
+                  height={48}
+                  className='rounded-full'
+                  loading='lazy'
+                />
 
                 <div>
                   <Paragraph text='Friskidia' weight='bold' style='text-sm' />
@@ -26,14 +33,21 @@ const Testimonials = () => (
               <Star />
               <Paragraph
                 text='“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus. “ '
-                color='dark-10'
+                color='dark-10 dark:text-white-100 text-xs lg:text-sm'
                 style='pt-6'
               />
             </div>
 
             <div className='w-2/5 p-10 shadow-xl bg-white-100 dark:bg-gray-900 sm:w-full'>
               <div className='flex gap-4 pb-3'>
-                <Image src={user} alt='user' width={48} height={48} className='rounded-full' />
+                <Image
+                  src={user}
+                  alt='user'
+                  width={48}
+                  height={48}
+                  className='rounded-full'
+                  loading='lazy'
+                />
 
                 <div>
                   <Paragraph text='Friskidia' weight='bold' style='text-sm' />
@@ -43,7 +57,7 @@ const Testimonials = () => (
               <Star />
               <Paragraph
                 text='“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus. “ '
-                color='dark-10'
+                color='dark-10 dark:text-white-100 text-sm'
                 style='pt-6'
               />
             </div>
@@ -58,7 +72,7 @@ const Testimonials = () => (
           <div className='w-[90%]'>
             <Paragraph
               text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
-              style='text-dark-10 sm:text-xs md:text-sm'
+              style='text-dark-10 sm:text-xs md:text-sm dark:text-white-100'
               size='sm'
             />
           </div>
@@ -72,7 +86,7 @@ const Testimonials = () => (
           </div>
         </div>
         <div className='w-2/5 pb-20 sm:w-full'>
-          <Image src={shirts} alt='shirts' width={590} height={349} />
+          <Image src={shirts} alt='shirts' width={590} height={349} loading='lazy' />
         </div>
       </div>
     </div>

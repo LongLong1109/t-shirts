@@ -37,9 +37,9 @@ const Oblongers = () => {
                   (currentOblongers - 1 + oblongersShirt.length) % oblongersShirt.length
                 ].alt
               }
-              className={`w-${100}`}
               width={300}
               height={200}
+              loading='lazy'
             />
           </div>
 
@@ -85,7 +85,7 @@ const Oblongers = () => {
           </div>
           <Paragraph
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, vel tempor dolor augue et lectus. Proin et lacus blandit quam semper placerat.'
-            style='text-white-90 sm:text-xs lg:text-sm'
+            style='text-white-90 text-xs'
             color='white-100 dark:text-dark-100'
           />
           <div className='flex pt-10 w-full'>

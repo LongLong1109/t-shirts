@@ -21,7 +21,7 @@ const Contact = () => {
             Contact
           </h2>
           <Paragraph
-            style='text-white-100 dark:text-dark-100'
+            style='text-white-100 dark:text-dark-100 text-xs lg:text-sm'
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
           />
         </div>

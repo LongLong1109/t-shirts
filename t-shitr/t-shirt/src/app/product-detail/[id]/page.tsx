@@ -34,7 +34,7 @@ const ProductDetail = ({ params }: ProductDetailProps) => {
         <h2 className='font-bold text-[24px] text-center pb-10'>Description</h2>
         <div className='max-w-[1440px] mx-auto'>
           <h3 className='font-bold text-sm'>Detail product</h3>
-          <ul className='list-disc pl-10 text-dark-10'>
+          <ul className='list-disc pl-10 text-dark-10 dark:text-white-100'>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>

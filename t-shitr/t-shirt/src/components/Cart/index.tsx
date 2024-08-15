@@ -60,22 +60,24 @@ const Cart = ({ cart, onDelete, onIncrease, onDecrease }: CartProps) => {
     <div className='max-w-[1440px] mx-auto'>
       <h2 className='text-[36px] font-bold'>Cart Product</h2>
       <div className='flex gap-10 flex-wrap'>
-        <div className='flex flex-col flex-1 max-h-[767px] overflow-y-scroll gap-6 w-full sm:w-full md:w-3/4 lg:flex-1'>
+        <div className='flex flex-col flex-1 gap-6 w-full lg:flex-1'>
           {cart.map(({ id, image, name, blurDataURL, color, price, inStock, quantity }, index) => (
             <div key={index} className='p-10 bg-white-90 dark:bg-dark-10 mx-4'>
               <div className='flex items-center justify-between gap-10 flex-wrap'>
-                <div className='w-full sm:w-auto'>
+                <div className='lg:w-[80px] lg:h-[80px] sm:w-auto'>
                   <Image
                     src={image}
                     alt={name}
-                    style={{
-                      width: '80%',
-                      height: '80px',
-                    }}
-                    width={300}
-                    height={100}
                     placeholder='blur'
                     blurDataURL={blurDataURL}
+                    width={150}
+                    height={100}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                    }}
+                    objectFit='cover'
+                    priority
                   />
                 </div>
                 <div className='w-full sm:w-auto'>
@@ -109,7 +111,7 @@ const Cart = ({ cart, onDelete, onIncrease, onDecrease }: CartProps) => {
             </div>
           ))}
         </div>
-        <div className='w-full sm:w-full md:w-1/4 lg:w-1/5 p-6 bg-white-90 dark:bg-dark-100 max-h-[248px]'>
+        <div className='w-full lg:w-1/5 p-6 bg-white-90 dark:bg-dark-100 max-h-[248px] mx-4'>
           <div className='flex justify-between'>
             <div>
               <h2 className='font-bold text-[18px]'>Subtotal</h2>

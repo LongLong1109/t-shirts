@@ -13,16 +13,18 @@ const ModelList = () => {
 
   return (
     <>
-      <Image
-        src={modelList[currentModel].src}
-        alt={modelList[currentModel].alt}
-        width={400}
-        height={520}
-        className='rounded-r-[100px] rounded-t-[100px]'
-        style={{
-          height: '520px',
-        }}
-      />
+      <div className='h-[520px]'>
+        <Image
+          src={modelList[currentModel].src}
+          alt={modelList[currentModel].alt}
+          width={400}
+          style={{
+            height: '100%',
+          }}
+          className='rounded-r-[100px] rounded-t-[100px]'
+          priority
+        />
+      </div>
 
       <div className='absolute bottom-8 pb-4 max-w-[400px]'>
         <Carousel

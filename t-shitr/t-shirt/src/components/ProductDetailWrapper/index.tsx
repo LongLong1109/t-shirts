@@ -82,6 +82,7 @@ const ProductDetailWrapper = ({ product }: { product: ProductProps }) => {
               width={500}
               height={100}
               blurDataURL='Imh0dHBzOi8vYml6d2ViLmRrdGNkbi5uZXQvdGh1bWIvMTAyNHgxMDI0LzEwMC80MzgvOTI2L3Byb2R1Y3RzLzc4OTQ3ODI1NTQwMjI0MDYwMTU2NjM3NjY3NDc3OS5wbmc/dj0xNjMzNTc3ODg3MzcwIg=='
+              priority
             />
           </div>
           <div className='gap-6 hidden lg:flex'>
@@ -94,6 +95,7 @@ const ProductDetailWrapper = ({ product }: { product: ProductProps }) => {
                   width={100}
                   height={100}
                   blurDataURL={blurData}
+                  priority
                 />
               </div>
             ))}
@@ -101,7 +103,7 @@ const ProductDetailWrapper = ({ product }: { product: ProductProps }) => {
         </div>
         <div className='lg:w-1/2 w-full'>
           <h1 className='text-md font-bold mb-4'>{name}</h1>
-          <p className='text-dark-90 mb-4'>
+          <p className='text-dark-90 mb-4 dark:text-white-100'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec
             iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.
           </p>
@@ -117,7 +119,7 @@ const ProductDetailWrapper = ({ product }: { product: ProductProps }) => {
             <div>
               <Paragraph text='Stock' size='sm' weight='bold' />
               <div className='flex pt-4 gap-4'>
-                <p className='text-dark-10'>({inStock})</p>
+                <p className='text-dark-10 dark:text-white-100'>({inStock})</p>
                 <CartIcon />
               </div>
             </div>

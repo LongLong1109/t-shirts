@@ -13,7 +13,7 @@ const Size = ({ id, name, value, isChecked, onChange, label }: SizeProps) => {
   }
 
   return (
-    <label className='flex items-center cursor-pointer'>
+    <label className='flex items-center justify-center cursor-pointer relative'>
       <input
         aria-label={`${name}-radio`}
         type='radio'
@@ -24,7 +24,7 @@ const Size = ({ id, name, value, isChecked, onChange, label }: SizeProps) => {
         onChange={handleChange}
         className={`appearance-none w-9 h-9 rounded-full ${isChecked ? 'bg-dark-50' : 'bg-white-75'} border border-gray-300`}
       />
-      <span className='absolute w-4 h-4 rounded-full ml-[11px] mb-[2px] flex items-center'>
+      <span className='absolute inset-0 flex items-center justify-center pointer-events-none'>
         <p className={`${isChecked ? 'text-white-100 font-bold' : ''}`}>{label}</p>
       </span>
     </label>

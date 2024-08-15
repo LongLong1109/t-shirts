@@ -44,14 +44,14 @@ const MyAccount = () => {
             </h2>
 
             <Paragraph
-              color='white-100 dark:text-dark-100'
+              color='white-100 dark:text-dark-100 text-xs lg:text-sm'
               text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
             />
           </div>
 
           <div className='flex flex-col p-10 bg-white-100 dark:bg-gray-900 shadow-xl items-center min-w-96 gap-2'>
             <div>
-              <Image src={avatar} alt='avatar' className='rounded-full' />
+              <Image src={avatar} alt='avatar' className='rounded-full' priority />
             </div>
             <h2 className='text-[24px] font-bold capitalize'>{userName}</h2>
             <p className='text-xs'>{email}</p>

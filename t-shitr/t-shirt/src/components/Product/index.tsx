@@ -1,13 +1,15 @@
 'use client'
+import { memo } from 'react'
+import isEqual from 'react-fast-compare'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+
+// constants
+import { PAGE_URL } from '@/constants/pageUrl'
 
 // components
 import { ProductProps } from '@/interfaces/product'
 import Star from '@/components/Star'
-
-// constants
-import { PAGE_URL } from '@/constants/pageUrl'
 
 const Product = ({ id, name, price, image }: ProductProps) => {
   const router = useRouter()
@@ -18,18 +20,18 @@ const Product = ({ id, name, price, image }: ProductProps) => {
 
   return (
     <div className='flex flex-col w-64 shadow-md cursor-pointer' onClick={handleClick}>
-      <div>
+      <div className='h-[248px]'>
         <Image
           src={image}
           alt={name}
-          className='w-48 h-48'
           objectFit='cover'
           style={{
             width: '100%',
-            height: '248px',
+            height: '100%',
           }}
           width={300}
           height={248}
+          priority
         />
       </div>
       <div className='bg-white-100 p-4 pb-6'>
@@ -46,4 +48,4 @@ const Product = ({ id, name, price, image }: ProductProps) => {
   )
 }
 
-export default Product
+export default memo(Product, isEqual)

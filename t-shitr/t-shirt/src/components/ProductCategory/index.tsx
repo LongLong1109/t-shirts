@@ -19,7 +19,7 @@ const ProductCategory = () => (
           />
           <Paragraph text='Categories Style' style='lg:text-lg pb-6 sm:text-sm' weight='bold' />
           <Paragraph
-            style='text-dark-10'
+            style='text-dark-10 dark:text-white-100 text-xs lg:text-sm'
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper.'
           />
         </div>

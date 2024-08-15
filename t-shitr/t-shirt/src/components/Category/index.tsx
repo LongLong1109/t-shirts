@@ -31,6 +31,7 @@ const Category = () => {
         }
         width={250}
         height={150}
+        priority
       />
     </div>
   )
